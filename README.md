@@ -1,8 +1,10 @@
 # Introduction to PsychoPy & Pavlovia Workshop
 
-Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). 
+
 
 ![](image/adi-goldstein.jpg)
+
+Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). 
 
 |Info        |Details    |
 |:----------------|:---------|
@@ -27,6 +29,10 @@ To have a smoother workshop experience, please ensure that you have:
 ## Workshop Day
 You will have installed the [PsychoPy3](https://www.psychopy.org/download.html) (v2021.1.0 onwards) and have registered for a [free Pavlovia account](https://gitlab.pavlovia.org/users/sign_in). 
 
+The workshop will be conducted on Zoom and you should receive the zipped `materials` folder before the workshop. Please unzip the folder and save the unzipped folder in your Desktop (**Important!** It is not advisable to save the folder in a cloud-base directory such as OneDrive or DropBox.)
+
+You can also download the materials from the top of this page. Go to Code -> Download as zip
+
 Today, we will cover: 
 - **First Block**
 
@@ -36,7 +42,7 @@ Today, we will cover:
 
 - **Third Block**
 
-Link to slides: ()
+[Link to slides](https://sohmeiling.github.io/Workshop_M_Connect/)
 
 ## Contributors:
 - Soh Mei Ling (E: ) 
