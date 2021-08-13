@@ -556,7 +556,7 @@ include_graphics("image/practice_loop.png")
 include_graphics("image/practice-loop-properties.png")
 ```
 
-Note for 5️⃣. 
+Note for 4️⃣. 
 
 Make sure you are in the correct directory. If you follow earlier instruction and have saved your folder in the **Desktop**, then your filepath should be
 
@@ -670,7 +670,7 @@ Now, make changes to the **Text** and **Keyboard** components.
 .pull-left[
 First, 
 
-```{r  out.width = "50%", fig.cap= "stim_text component", fig.align="center", dpi =96, echo=FALSE}
+```{r  out.width = "80%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/stim_text.png")
 ```
 ]
