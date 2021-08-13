@@ -29,7 +29,7 @@ To have a smoother workshop experience, please ensure that you have:
 ## Workshop Day
 You will have installed the [PsychoPy3](https://www.psychopy.org/download.html) (v2021.1.0 onwards) and have registered for a [free Pavlovia account](https://gitlab.pavlovia.org/users/sign_in). 
 
-The workshop will be conducted on Zoom and you should receive the zipped `materials` folder before the workshop. Please unzip the folder and save the unzipped folder in your Desktop (**Important!** It is not advisable to save the folder in a cloud-base directory such as OneDrive or DropBox.)
+The workshop will be conducted on Zoom and you should receive the zipped `materials` folder before the workshop. Please unzip the folder and save the unzipped folder in your `Desktop` (**Important!** It is not advisable to save the folder in a cloud storage such as OneDrive or DropBox.)
 
 You can also download the materials from the top of this page. Go to Code -> Download as zip
 
@@ -45,7 +45,7 @@ Today, we will cover:
 [Link to slides](https://sohmeiling.github.io/Workshop_M_Connect/)
 
 ## Contributors:
-- Soh Mei Ling (E: ) 
+- Soh Mei Ling (E: hpxms1@nottingham.edu.my; Twitter: @sohmeiling; Github: @sohmeiling) 
 - Chong Kai Hao (khpy6ckh@nottingham.edu.my) 
 - Jonathan (hpxkc1@nottingham.edu.my)
 
