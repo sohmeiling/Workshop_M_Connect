@@ -55,6 +55,7 @@ This workshop will:
 ## Pre-requisite
 
 ### Is this workshop suitable for me? 
+
 There is no pre-requisite programming knowledge for this workshop, except some knowledge on how to operate your laptop/desktop. 
 
 - This is **NOT** a programming workshop and you are not asked to know any programming language prior to attending this workshop. 
@@ -91,6 +92,7 @@ You can refer to the [Reference API](https://www.psychopy.org/api/index.html#api
 class: inverse, center, middle
 
 # Getting Started <br/><br/>(Basics)
+
 ---
 ## Builder View
 .left-column[
