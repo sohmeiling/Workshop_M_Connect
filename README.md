@@ -32,7 +32,7 @@ Link to slides: ()
 
 Contributors:
 - Soh Mei Ling (E: )
-- Chong Kai Hao (E: )
+- Chong Kai Hao (E: khpy6ckh@nottingham.edu.my)
 - Jonathan (hpxkc1@nottingham.edu.my)
 
 ## License
