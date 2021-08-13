@@ -7,14 +7,14 @@ In this workshop, we are going to give a broad introduction to using PsychoPy. T
 To have a smoother workshop experience, please ensure that you have:
 
 - Created a Pavlovia account
-    - Register for a free Pavlovia account att https://pavlovia.org in advance. 
+    - Register for a free Pavlovia account at [https://pavlovia.org](https://pavlovia.org) in advance. 
 
 - Install/Update a Recent Version of PsychoPy
-    - You will need to have a working copy of PsychoPy on your computer in order to get maximum benefits from this workshop. If you go to the PsychoPy’s download web page (https://www.psychopy.org/download.html), you should see a blue button on top of the page. At the time this instruction was written the current version was PsychoPy 2021.2.0 (Python 3.6) and we recommend you to use the most recent version where possible. Download the PsychoPy standalone as the downloading takes a couple of minutes. 
+    - You will need to have a working copy of PsychoPy on your computer in order to get maximum benefits from this workshop. If you go to the PsychoPy’s download web page [https://www.psychopy.org/download.html](https://www.psychopy.org/download.html), you should see a blue button on top of the page. At the time this instruction was written the current version was PsychoPy 2021.2.0 (Python 3.6) and we recommend you to use the most recent version where possible. Download the PsychoPy standalone as the downloading takes a couple of minutes. 
     - If you already have PsychoPy installed, please ensure that it is updated to the 2021 version (PsychoPy 2021.1.2 - 2021.1.4).
 
 - Attempt the Stroop Task Demo that we will be designing before the workshop to give you a general idea of the experiment.
-    - Link: https://run.pavlovia.org/hpxms1/stroop_demo_workshop
+    - Link: [Stroop Task](https://run.pavlovia.org/hpxms1/stroop_demo_workshop)
 
 ## Workshop Day
 You will have installed the [PsychoPy3](https://www.psychopy.org/download.html) (v2021.1.0 onwards) and have registered for a [free Pavlovia account](https://gitlab.pavlovia.org/users/sign_in). 
