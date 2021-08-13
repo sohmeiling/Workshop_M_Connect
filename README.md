@@ -1,6 +1,8 @@
-# Introducttion to PsychoPy & Pavlovia Workshop
+# Introduction to PsychoPy & Pavlovia Workshop
 
 Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). 
+
+![] https://unsplash.com/photos/mDinBvq1Sfg)
 
 |Info        |Details    |
 |:----------------|:---------|
