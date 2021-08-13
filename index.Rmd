@@ -2,7 +2,7 @@
 title: "Workshop: Introduction to PsychoPy"
 subtitle: "⚔<br/><br/>with Pavlovia"
 author: 
-      - Soh Mei Ling | Jonathan Choo Kam Kitt | Chong Kai Hao
+      - Soh Mei Ling | Jonathan Choo | Chong Kai Hao
 institute: "University of Nottingham, Malaysia"
 date: "2021/08/19 (updated: `r Sys.Date()`)"
 output:
