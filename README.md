@@ -1,5 +1,9 @@
-# Workshop_M_Connect
-Here, you can find all the materials used in the M_Connect's workshop (Introduction to PsychoPy). 
+# Introducttion to PsychoPy & Pavlovia Workshop
+
+Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). 
+
+|Date| 19th August 2021|
+|Time | 11:00 am - 12:30 pm|
 
 In this workshop, we are going to give a broad introduction to using PsychoPy. This is useful for anyone who is unfamiliar with PsychoPy and hasn’t used the PsychoPy before (beginner). However, it is also useful for immediate PsychoPy users who are interested to learn useful tips and tricks as well as those who want a refresher lesson. Due to the pandemic, this workshop will be delivered through the Zoom platform and interested participants can register for the workshop through the conference sign-up list. 
 
@@ -11,7 +15,7 @@ To have a smoother workshop experience, please ensure that you have:
 
 - Install/Update a Recent Version of PsychoPy
     - You will need to have a working copy of PsychoPy on your computer in order to get maximum benefits from this workshop. If you go to the PsychoPy’s download web page [https://www.psychopy.org/download.html](https://www.psychopy.org/download.html), you should see a blue button on top of the page. At the time this instruction was written the current version was PsychoPy 2021.2.0 (Python 3.6) and we recommend you to use the most recent version where possible. Download the PsychoPy standalone as the downloading takes a couple of minutes. 
-    - If you already have PsychoPy installed, please ensure that it is updated to the 2021 version (PsychoPy 2021.1.2 - 2021.1.4).
+    - If you already have PsychoPy installed, please ensure that it is updated to the 2021 version (PsychoPy v2021.1.2 - 2021.1.4).
 
 - Attempt the Stroop Task Demo that we will be designing before the workshop to give you a general idea of the experiment.
     - Link: [Stroop Task](https://run.pavlovia.org/hpxms1/stroop_demo_workshop)
@@ -30,9 +34,9 @@ Today, we will cover:
 
 Link to slides: ()
 
-Contributors:
-- Soh Mei Ling (E: )
-- Chong Kai Hao (khpy6ckh@nottingham.edu.my)
+## Contributors:
+- Soh Mei Ling (E: ) 
+- Chong Kai Hao (khpy6ckh@nottingham.edu.my) 
 - Jonathan (hpxkc1@nottingham.edu.my)
 
 ## License
