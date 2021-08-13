@@ -4,6 +4,9 @@
 
 ![](image/adi-goldstein.jpg)
 
+Photo by <a href="https://unsplash.com/@adigold1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adi Goldstein</a> on <a href="https://unsplash.com/s/photos/coding-for-kids?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
 Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). 
 
 |Info        |Details    |
