@@ -2,6 +2,8 @@
 
 Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). 
 
+|Info        |Details    |
+|:----------------|:---------|
 |Date| 19th August 2021|
 |Time | 11:00 am - 12:30 pm|
 
