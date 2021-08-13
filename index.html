@@ -3,7 +3,7 @@
   <head>
     <title>Workshop: Introduction to PsychoPy</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Soh Mei Ling | Jonathan Choo Kam Kitt | Chong Kai Hao" />
+    <meta name="author" content="Soh Mei Ling | Jonathan Choo | Chong Kai Hao" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/rladies.css" rel="stylesheet" />
@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 
 # Workshop: Introduction to PsychoPy
 ## ⚔<br/><br/>with Pavlovia
-### Soh Mei Ling | Jonathan Choo Kam Kitt | Chong Kai Hao
+### Soh Mei Ling | Jonathan Choo | Chong Kai Hao
 ### University of Nottingham, Malaysia
 ### 2021/08/19 (updated: 2021-08-13)
 
@@ -577,7 +577,7 @@ In the ***Flow*** window, `Insert loop` around the _Practice_Trial_ routine
 &lt;p class="caption"&gt;practice_loop properties&lt;/p&gt;
 &lt;/div&gt;
 
-Note for 5️⃣. 
+Note for 4️⃣. 
 
 Make sure you are in the correct directory. If you follow earlier instruction and have saved your folder in the **Desktop**, then your filepath should be
 
@@ -749,10 +749,7 @@ Now, make changes to the **Text** and **Keyboard** components.
 .pull-left[
 First, 
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="image/stim_text.png" alt="stim_text component" width="50%" /&gt;
-&lt;p class="caption"&gt;stim_text component&lt;/p&gt;
-&lt;/div&gt;
+&lt;img src="image/stim_text.png" width="60%" style="display: block; margin: auto;" /&gt;
 ]
 
 --
@@ -780,7 +777,28 @@ Modify 7️⃣
 ]
 
 ---
-### Step 10: Counterbalancing
+### Step 10: Launch the study online
+
+Before you push your study to Pavlovia, make sure that: 
+
+1. You have login into your Pavlovia account. 
+2. You have test-run the experiment and it works on PsychoPy. 
+--
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="gif/push-to-pavlovia.gif" alt="GIF for launching online" width="50%" /&gt;
+&lt;p class="caption"&gt;GIF for launching online&lt;/p&gt;
+&lt;/div&gt;
+
+---
+layout: false
+
+background-image: url("gif/pavlovia.gif")
+background-position: center
+background-size: contain
+
+---
+### Step 11: Counterbalancing
 
 #### Blocking similar conditions 
 
@@ -808,7 +826,7 @@ Counterbalancing requires a bit of thinking! In our Stroop Task, we have three t
 ]
 
 ---
-### Step 10: Counterbalancing (Blocking similar conditions) 
+### Step 11: Counterbalancing (Blocking similar conditions) 
 
 --
 We can collapse both files into a single ***Loop***. 
@@ -826,7 +844,7 @@ We can collapse both files into a single ***Loop***.
 &lt;/div&gt;
 
 ---
-### Step 10: Counterbalancing (Blocking similar conditions)
+### Step 11: Counterbalancing (Blocking similar conditions)
 
 &lt;div class="figure" style="text-align: center"&gt;
 &lt;img src="image/counter-loop.png" alt="The Flow layout" width="60%" /&gt;
@@ -842,26 +860,22 @@ We can collapse both files into a single ***Loop***.
 
 2. Try to add instructions for your participants, informing them if the following trial is a Word Stroop, Color Stroop, or Word-color Stroop. 
 
----
-### Step 11: Launch the study online
-
-Before you push your study to Pavlovia, make sure that: 
-
-1. You have login into your Pavlovia account. 
-2. You have test-run the experiment and it works on PsychoPy. 
---
-
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="gif/push-to-pavlovia.gif" alt="GIF for launching online" width="50%" /&gt;
-&lt;p class="caption"&gt;GIF for launching online&lt;/p&gt;
-&lt;/div&gt;
 
 ---
 layout: false
 
-background-image: url("gif/pavlovia.gif")
-background-position: center
-background-size: contain
+class: inverse, center, middle
+
+# Part 2 &lt;br/&gt; &lt;br/&gt;(Advanced Functions)
+
+---
+
+### Step 12: Add a feedback Loop
+
+
+
+---
+## Troubleshooting
 
 ---
 class: inverse, center, middle
@@ -962,6 +976,12 @@ layout: true
 | .rt | Logs the reaction time (seconds) taken to press a valid key(s)
 | .corr | Logs the accuracy (1 = correct, 0 = wrong)
 
+---
+layout: false
+
+class: inverse, center, middle
+
+# Navon Task
 
 ---
 class: center, middle

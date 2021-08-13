@@ -670,7 +670,7 @@ Now, make changes to the **Text** and **Keyboard** components.
 .pull-left[
 First, 
 
-```{r  out.width = "80%", fig.align="center", dpi =96, echo=FALSE}
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/stim_text.png")
 ```
 ]
@@ -699,7 +699,27 @@ Modify 7️⃣
 ]
 
 ---
-### Step 10: Counterbalancing
+### Step 10: Launch the study online
+
+Before you push your study to Pavlovia, make sure that: 
+
+1. You have login into your Pavlovia account. 
+2. You have test-run the experiment and it works on PsychoPy. 
+--
+
+```{r  out.width = "50%", fig.cap= "GIF for launching online", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("gif/push-to-pavlovia.gif")
+```
+
+---
+layout: false
+
+background-image: url("gif/pavlovia.gif")
+background-position: center
+background-size: contain
+
+---
+### Step 11: Counterbalancing
 
 #### Blocking similar conditions 
 
@@ -725,7 +745,7 @@ include_graphics("image/color-practice.png")
 ]
 
 ---
-### Step 10: Counterbalancing (Blocking similar conditions) 
+### Step 11: Counterbalancing (Blocking similar conditions) 
 
 --
 We can collapse both files into a single ***Loop***. 
@@ -742,7 +762,7 @@ include_graphics("image/conditions.png")
 ```
 
 ---
-### Step 10: Counterbalancing (Blocking similar conditions)
+### Step 11: Counterbalancing (Blocking similar conditions)
 
 ```{r  out.width = "60%", fig.cap= "The Flow layout", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/counter-loop.png")
@@ -757,25 +777,22 @@ include_graphics("image/counter-loop.png")
 
 2. Try to add instructions for your participants, informing them if the following trial is a Word Stroop, Color Stroop, or Word-color Stroop. 
 
----
-### Step 11: Launch the study online
-
-Before you push your study to Pavlovia, make sure that: 
-
-1. You have login into your Pavlovia account. 
-2. You have test-run the experiment and it works on PsychoPy. 
---
-
-```{r  out.width = "50%", fig.cap= "GIF for launching online", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("gif/push-to-pavlovia.gif")
-```
 
 ---
 layout: false
 
-background-image: url("gif/pavlovia.gif")
-background-position: center
-background-size: contain
+class: inverse, center, middle
+
+# Part 2 <br/> <br/>(Advanced Functions)
+
+---
+
+### Step 12: Add a feedback Loop
+
+
+
+---
+## Troubleshooting
 
 ---
 class: inverse, center, middle
@@ -875,6 +892,12 @@ layout: true
 | .rt | Logs the reaction time (seconds) taken to press a valid key(s)
 | .corr | Logs the accuracy (1 = correct, 0 = wrong)
 
+---
+layout: false
+
+class: inverse, center, middle
+
+# Navon Task
 
 ---
 class: center, middle
