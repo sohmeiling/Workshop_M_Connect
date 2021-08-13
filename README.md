@@ -8,7 +8,7 @@ Photo by <a href="https://unsplash.com/@adigold1?utm_source=unsplash&utm_medium=
 
 <br/><br/>
 
-Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). The repository has been set to public and you are free to use the materials as subjected to the license (OpenScience Framework). 
+Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). The repository has been set to public and you are free to use the materials as subjected to the license (OpenScience Framework).
 
 |Info        |Details    |
 |:----------------|:---------|
@@ -29,7 +29,7 @@ To have a smoother workshop experience, please ensure that you have:
 
 - Attempt the Stroop Task Demo that we will be designing before the workshop to give you a general idea of the experiment.
     - Link: [Stroop Task](https://run.pavlovia.org/hpxms1/stroop_demo_workshop)
-    - Optional: [Navon Task] (https://run.pavlovia.org/hpxms1/navon_demo)
+    - Optional: [Navon Task](https://run.pavlovia.org/hpxms1/navon_demo)
 
 ## Workshop Day
 You will have installed the [PsychoPy3](https://www.psychopy.org/download.html) (v2021.1.0 onwards) and have registered for a [free Pavlovia account](https://gitlab.pavlovia.org/users/sign_in).

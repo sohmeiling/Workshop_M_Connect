@@ -38,6 +38,12 @@ knitr::opts_chunk$set(
 )
 
 ```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+xaringanExtra::use_broadcast()
+```
+
 ## Objectives
 This workshop will:  
 
