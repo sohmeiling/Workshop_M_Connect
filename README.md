@@ -2,7 +2,7 @@
 
 Here, you can find all the materials used in the Connect'M's workshop (Introduction to PsychoPy). 
 
-![] https://unsplash.com/photos/mDinBvq1Sfg)
+![](image/adi-goldstein.jpg)
 
 |Info        |Details    |
 |:----------------|:---------|
