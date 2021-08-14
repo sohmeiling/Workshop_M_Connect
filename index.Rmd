@@ -1,30 +1,32 @@
 ---
-title: "Workshop: Introduction to PsychoPy"
-subtitle: "⚔<br/><br/>with Pavlovia"
-author: 
-      - Soh Mei Ling | Jonathan Choo | Chong Kai Hao
+title: "Introduction to PsychoPy & Pavlovia"
+author: "Soh Mei Ling | Jonathan Choo | Chong Kai Hao"
 institute: "University of Nottingham, Malaysia"
 date: "2021/08/19 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    css: ["default", "rladies", "rladies-fonts"]
+    css: ["tweaks.css", "kunoichi", "ninjutsu"]
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightSpans: true
       highlightLines: true
+      highlightLanguage: ["r", "css","python", "yaml"]
       ratio: 16:9
       countIncrementalSlides: false
+    seal: false
 
 ---
 
 ```{r setup, include=FALSE}
+library(reticulate)
 library(tidyverse)
 library(xaringan)
 library(xaringanExtra)
 library(here)
 library(knitr)
 library(png)
+
 
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
@@ -44,81 +46,109 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
 ```
 
-## Objectives
+.title-slide[
+
+# .center[Workshop <br>⚔<br/>Introduction to PsychoPy & Pavlovia]
+
+## .center[<br>Soh Mei Ling | Jonathan Choo | Chong Kai Hao]
+### .center[University of Nottingham, Malaysia]
+### .center[19 August 2021]
+
+.right[Photo by <a href="https://unsplash.com/@tofanteo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tofan Teodor</a> on <a href="https://unsplash.com/s/photos/purple-penang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]
+  
+]
+
+---
+
+## .deep-purple[Objectives]
 This workshop will:  
 
 - introduce you all to the basic aspects of the PsychoPy Builder interface
 
-- teach you how to create a simple experiment; the Stroop task
+- teach you how to create a simple experiment: .purple[Stroop task]
 
-- teach you how to create a perception experiment: the Navon task
+- teach you how to create a perception experiment: .purple[Navon task]
 
 - help you launch your first online experiment on Pavlovia
 
 - provide you some resources to go further
 
 ---
-## Pre-requisite
+## .deep-purple[Is this workshop suitable for me?]
 
-### Is this workshop suitable for me? 
+There is no pre-requisite programming knowledge needed for this workshop, except some knowledge on how to operate your laptop/desktop. 
 
-There is no pre-requisite programming knowledge for this workshop, except some knowledge on how to operate your laptop/desktop. 
+- This is .pink[**NOT**] a programming workshop and you are not asked to know any programming language prior to attending this workshop. 
 
-- This is **NOT** a programming workshop and you are not asked to know any programming language prior to attending this workshop. 
+- We do some coding, and it is very _minimum_. It is fine if you do not understand the codes. Most of the time, we just _google_ for the answer. 
 
-- We do some coding, and it is very minimum. It is fine if you do not understand the codes. Most of the time, we just _google_ for answer. 
-
-- Due to the limited time, we will NOT be able to cover all aspects of PsychoPy and Pavlovia. We encourage the participants to explore the links that we provide at the end of the workshop for more information. 
+- Due to time constraint, we will NOT be able to cover all aspects of PsychoPy and Pavlovia. We encourage the participants to explore the links that we provide at the end of the workshop for more information. 
 
 ---
-## What is PsychoPy?
+layout: true
+## .deep-purple[What is PsychoPy?]
 
+---
 - PsychoPy is an open-source package for running experiments in Python 
-(a real and **free** alternative to Matlab) See [advantages of using PsychoPy](https://www.psychopy.org/)
+(a real and **free** alternative to Matlab) See [advantages of using PsychoPy.](https://www.psychopy.org/)
 
-- It has three windows: 
+- There are two main ways of interacting with PsychoPy's ***Runner***. You can use the ***Builder*** or the script files (plain text files that contain your code in the ***Coder***).
     - A code editor(called ***Coder***)
     - A graphical user interface (called ***Builder***)
     - A console that runs the code (called ***Runner***)
 
 - For beginners, you will spend most of your time at the ***Builder***<sup>1</sup> view. 
 
-- For those comfortable with programming, you can write Python code on the ***Coder***<sup>2</sup> view.
-You can refer to the [Reference API](https://www.psychopy.org/api/index.html#api) for the details of the dependencies used in the library.
+<br><br><br><br>
 
+.footnote[.gray.bold[
+[1] If you are using builder, make sure you are really happy with your ***Builder*** format before moving to coder.]]
+---
+- For those comfortable with programming, you can write Python code on the ***Coder***<sup>2</sup> view. You can refer to the [Reference API](https://www.psychopy.org/api/index.html#api) for the details of the dependencies used in the library.
 
-.footnote[
-[1] If you are using builder, make sure you are really happy with your ***Builder*** format before moving to coder.
+--
 
-[2] Only use ***Coder*** to fine-tune the experiment. You can compile your experiment into a Python script using the `compile to script` button. The best practice is to use a ***Builder*** to design most part of the experiment and only fine-tuning the experiment using the `Code Component`. 
-]
+.red[⚠️ **Friendly reminder**]
+
+- Do not touch the ***Coder*** unless you know what you are doing, it’s a one-way street! Once a code is changed in the ***Coder***, you can no longer use the ***Builder***!
+
+ 
+
+<br><br><br><br><br><br>
+
+.footnote[.gray.bold[
+[2] You can compile your experiment into a Python script using the .bg-main4[compile to script] button. Usual practice is to use a ***Builder*** to design most part of the experiment and only fine-tune the experiment using the .bg-main4[code] component. 
+]]
 
 
 ---
-class: inverse, center, middle
+layout:false
+background-image: url(image/stars-melanie.jpg)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, bottom
 
-# Getting Started <br/><br/>(Basics)
+# .white[Getting Started <br/><br/>(Basics)]
 
+<br><br><br><br><br>
+
+.right[.white[Photo by <a href="https://unsplash.com/@m2creates?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Melanie Magdalena</a> on <a href="https://unsplash.com/s/photos/dark-purple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ]]
 ---
 ## Builder View
-.left-column[
-***Builder*** has three windows: 
-    - Routines
-    - Components
-    - Flow
-]
 
-.right-column[
-![](image/builder-view.png)
-]
+***Builder*** has three windows: Routines, Components, & Flow
 
+```{r  out.width = "80%", dpi =96, echo=FALSE, fig.align="center"}
+include_graphics("image/builder-view.png")
+```
+
+.footnote[.gray[Image taken from PsychoPy website https://www.psychopy.org/builder/builder.html]]
 ---
 ## Coder View
 
 .left-column[
-***Coder*** has two windows: 
-- Integrated Development Environment (IDE)
-- Output
+***Coder*** has two windows: `Integrated Development Environment (IDE) & Output
 ]
 
 .right-column[
@@ -127,6 +157,7 @@ include_graphics("image/coder-view.png")
 ```
 ]
 ---
+
 ## Experiment Setting
 
 - __Experiment Info__: This information will be presented in a dialog box at the start and will be saved with any data files and so can be used for storing information about the current run of the study.
@@ -150,14 +181,15 @@ layout: true
 include_graphics("image/toolbar-icons-1.png")
 ```
 
-.center[Figure 1. The first six toolbar's icons <br/>(New experiment<sup>1</sup>, Open<sup>2</sup>, Save<sup>3</sup>, Save As<sup>4</sup>, Undo<sup>5</sup>, Redo<sup>6</sup>)]
-- For other icons, if you hover over, you get a tool tip telling you what each icon does.
+.center[.gray.bold[Figure 1. The first six toolbar's icons <br/>(New experiment<sup>1</sup>, Open<sup>2</sup>, Save<sup>3</sup>, Save As<sup>4</sup>, Undo<sup>5</sup>, Redo<sup>6</sup>)]]
+
+- For other icons, if you .pink[hover over], you get a tool tip telling you what each icon does.
 
 ```{r  out.width = "20%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/toolbar-icons-2.png")
 ```
 
-.center[Figure 2. The next six toolbar's icons <br/> (Monitor Setting<sup>7</sup>, Experiment Setting<sup>8</sup>, <br/>Compile to Python Script<sup>9</sup>, Compile to JS Script<sup>10</sup>, Send experiment to Runner<sup>11</sup>, Run experiment<sup>12</sup>)]
+.center[.gray.bold[Figure 2. The next six toolbar's icons <br/> (Monitor Setting<sup>7</sup>, Experiment Setting<sup>8</sup>, <br/>Compile to Python Script<sup>9</sup>, Compile to JS Script<sup>10</sup>, Send experiment to Runner<sup>11</sup>, Run experiment<sup>12</sup>)]]
 ---
 
 
@@ -167,26 +199,33 @@ include_graphics("image/toolbar-icons-2.png")
 include_graphics("image/toolbar-icons-3.png")
 ```
 
-.center[Figure 3. The last five toolbar's icons <br/> (Run the study online<sup>13</sup>, Sync with web project<sup>14</sup>, <br/>Find existing study online<sup>15</sup>, Log in<sup>16</sup>, View details of the project<sup>17</sup>)]
+.center[.gray.bol[Figure 3. The last five toolbar's icons <br/> (Run the study online<sup>13</sup>, Sync with web project<sup>14</sup>, <br/>Find existing study online<sup>15</sup>, Log in<sup>16</sup>, View details of the project<sup>17</sup>)]]
 
-Before you push your study online, you need to login to the Pavlovia. You can either login using the **Login** icon _or_  login using the `Pavlovia.org` tab
+Before you push your study online, you need to login to the Pavlovia. You can either login using the .bg-main4[Login icon] above _or_  login using the .bg-main4[Pavlovia.org] tab.
 
 ```{r  out.width = "35%", fig.align="center", fig.cap= "Logging in on Pavlovia via the PsychoPy 3 Builder", dpi =96, echo=FALSE}
 include_graphics("image/loginPavlovia.png")
 ```
 
 ---
-layout: false
+layout:false
+background-image: url(image/stars-melanie.jpg)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, bottom
 
-background-image: url("gif/pavlovia.gif")
-background-position: center
-background-size: contain
+# .white[Getting Started <br/><br/>(Component, Routine, & Loop)]
+
+<br><br><br><br><br>
+
+.right[.white[Photo by <a href="https://unsplash.com/@m2creates?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Melanie Magdalena</a> on <a href="https://unsplash.com/s/photos/dark-purple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ]]
 
 ---
 ## Add New Routine
 
-1. On the ***Flow*** window, select ` Insert Routine`  ➡️ `(new) ` 
-2. A `New Routine` window will pop up. Enter a meaningful name for the new routine. Click 🆗 .
+1. On the ***Flow*** window, select .bg-main4[Insert Routine]  ➡️ .bg-main4[   (new) ]
+2. A new routine window will pop up. Enter a meaningful name for the new routine. Click 🆗 .
 3. Now you should see the Routine appears as tab on the ***Routines*** window.
 
 ```{r  out.width = "60%", fig.cap= "GIF for adding new routine", fig.align="center",dpi =96, echo=FALSE}
@@ -201,7 +240,7 @@ layout: true
 ---
 
 1. On the ***Components*** window, select the type of component that you want. 
-Under `Favorites`, a few commonly used components are listed. 
+Under .br-main4[Favorites], a few commonly used components are listed. 
 2. They typically represent either stimuli (e.g. **Image** or **Text** Components), or methods of responding (e.g. **Mouse** or **Keyboard** Components)
 3. Clicking on any of the components will result in a pop-up window. 
 
@@ -227,7 +266,7 @@ include_graphics("image/component-type.png")
 .pull-left[
 
 
-```{r  out.width = "70%", fig.cap= "Pop-up window for text component", dpi =96, echo=FALSE}
+```{r  out.width = "100%", fig.cap= "Pop-up window for text component", dpi =96, echo=FALSE}
 include_graphics("image/text-component.png") 
 ```
 
@@ -375,14 +414,20 @@ include_graphics("gif/add-new-loop.gif")
 ```
 
 ---
+background-image: url(image/projects-octavianDan.jpg)
+background-position: 50% 50%
+background-size: cover
 class: inverse, center, middle
 
-# Getting Started <br/> <br/>(Designing Stroop Task)
+# .white[Getting Started <br/><br/>(Designing Stoop Task)]
+
+.footnote[.white[Photo by <a href="https://unsplash.com/@octadan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Octavian Dan</a> on <a href="https://unsplash.com/s/photos/purple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ]]
+  
 ---
 layout: true
 
-## Stroop Task
-
+## .deep-purple[Stroop Task]
 ---
 
 The Stroop effect is the finding that naming the color of the first set of words is easier and quicker than the second.
@@ -391,8 +436,7 @@ The Stroop effect is the finding that naming the color of the first set of words
 
 - The task is to name the ink color, inhibiting the reading of the word, and the score is the number of correctly named elements. 
 
-<br/>
-```{r  out.width = "40%", fig.align="center", fig.cap= "Stroop Task", dpi =96, echo=FALSE}
+```{r  out.width = "40%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("gif/stroop.gif")
 ```
 ---
@@ -540,12 +584,12 @@ include_graphics("image/end-routine.png")
 
 Please refer to the images below and follow the number closely.
 
-.pull-left[
-```{r  out.width = "65%", fig.cap= "end_text component", dpi =96, echo=FALSE}
-include_graphics("image/end_text.png")
+
+```{r  out.width = "75%", fig.cap= "end_text component", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/end_text2.png")
 ```
 
-]
+
 ---
 ### Step 6: Create a loop in the Flow window
 
@@ -904,6 +948,14 @@ layout: false
 class: inverse, center, middle
 
 # Navon Task
+
+Description for Navon
+
+---
+
+class: inverse, center, middle
+
+<a href="http://github.com/sohmeiling"><i class="fa fa-github fa-fw"></i>&nbsp; sohmeiling</a><br>
 
 ---
 class: center, middle
