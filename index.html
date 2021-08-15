@@ -5,8 +5,9 @@
     <meta charset="utf-8" />
     <meta name="author" content="Soh Mei Ling | Jonathan Choo | Chong Kai Hao" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
@@ -26,9 +27,9 @@
 
 .title-slide[
 
-# .center[Workshop &lt;br&gt;⚔&lt;br/&gt;Introduction to PsychoPy &amp; Pavlovia]
+# .center[Workshop &lt;br&gt;⚔&lt;br/&gt;Introduction to &lt;br&gt;PsychoPy &amp; Pavlovia]
 
-## .center[&lt;br&gt;Soh Mei Ling | Jonathan Choo | Chong Kai Hao]
+## .center[&lt;br&gt; Kai Hao | Mei Ling | Jonathan Choo ]
 ### .center[University of Nottingham, Malaysia]
 ### .center[19 August 2021]
 
@@ -38,7 +39,31 @@
 
 ---
 
-## .deep-purple[Objectives]
+## Housekeeping Rules
+
+- All of you will be muted during the Zoom session. If you need to ask a question, please feel free to use the chat box or raise your hand. 
+
+- We have set up a Slack [Slack link here] for any technical difficulties during the session. Please ask your question by posting a new message in the .pink[\#Troubleshooting channel]. 
+
+### Asking questions
+
+- We encourage all the participants to contribute to the workshop by either asking questions or answering questions posted by other participants in Slack. 
+
+- Before you ask any question, you might want to check the threads in the .pink[\#Troubleshooting channel] first, in case your question have been asked. 
+
+- Our beloved TAs will be stationed at the .pink[\#Troubleshooting channel] to answer your questions. 
+
+- This is a huge workshop, so please do understand if we can't get to your question immediately. However, please be ensure that we will definitely answer your question, or at least direct you to someone who knows the answer. 
+
+
+&lt;br&gt;&lt;br&gt;
+
+.footnote.gray[
+For those unfamiliar with Slack, you can just click on the Slack link and join the channels. You will need to login with an email address. 
+]
+---
+
+## Objectives
 This workshop will:  
 
 - introduce you all to the basic aspects of the PsychoPy Builder interface
@@ -52,7 +77,7 @@ This workshop will:
 - provide you some resources to go further
 
 ---
-## .deep-purple[Is this workshop suitable for me?]
+## Is this workshop suitable for me?
 
 There is no pre-requisite programming knowledge needed for this workshop, except some knowledge on how to operate your laptop/desktop. 
 
@@ -60,11 +85,15 @@ There is no pre-requisite programming knowledge needed for this workshop, except
 
 - We do some coding, and it is very _minimum_. It is fine if you do not understand the codes. Most of the time, we just _google_ for the answer. 
 
-- Due to time constraint, we will NOT be able to cover all aspects of PsychoPy and Pavlovia. We encourage the participants to explore the links that we provide at the end of the workshop for more information. 
+- Due to time constraint, we will NOT be able to cover all aspects of PsychoPy and Pavlovia. We encourage the participants to explore the links that we provide at the end of the workshop for more information.
+
+&lt;br&gt;&lt;br&gt;
+
+* You can find [all material here &lt;i class="fab fa-github"&gt;&lt;/i&gt; ](https://github.com/sohmeiling/Workshop_M_Connect) or [download as zip here &lt;i class="fa fa-download"&gt;&lt;/i&gt; ](https://github.com/sohmeiling/Workshop_M_Connect/archive/refs/heads/main.zip)
 
 ---
 layout: true
-## .deep-purple[What is PsychoPy?]
+## What is PsychoPy?
 
 ---
 - PsychoPy is an open-source package for running experiments in Python 
@@ -101,34 +130,34 @@ layout: true
 
 ---
 layout:false
-background-image: url(image/stars-melanie.jpg)
+background-image: url(image/transition.jpg)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, bottom
 
-# .white[Getting Started &lt;br/&gt;&lt;br/&gt;(Basics)]
+# .font_medium[.black[Getting Started &lt;br/&gt;&lt;br/&gt;(Basics)]]
 
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-.right[.white[Photo by &lt;a href="https://unsplash.com/@m2creates?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Melanie Magdalena&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/dark-purple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+.right[.black[Photo by &lt;a href="https://unsplash.com/@scottwebb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Scott Webb&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
   ]]
 ---
 ## Builder View
 
 ***Builder*** has three windows: Routines, Components, &amp; Flow
 
-&lt;img src="image/builder-view.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="image/builder-view.png" width="70%" style="display: block; margin: auto;" /&gt;
 
 .footnote[.gray[Image taken from PsychoPy website https://www.psychopy.org/builder/builder.html]]
 ---
 ## Coder View
 
-.left-column[
+.column[
 ***Coder*** has two windows: `Integrated Development Environment (IDE) &amp; Output
 ]
 
-.right-column[
-&lt;img src="image/coder-view.png" width="60%" style="display: block; margin: auto;" /&gt;
+.column[
+&lt;img src="image/coder-view.png" width="45%" style="display: block; margin: auto;" /&gt;
 ]
 ---
 
@@ -139,7 +168,7 @@ class: inverse, center, bottom
 - __Units__: The default units of the window but these can be overriden by individual components.
 
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="gif/experiment-setting.gif" alt="Figure. GIF for experiment settings" width="50%" /&gt;
+&lt;img src="gif/experiment-setting.gif" alt="Figure. GIF for experiment settings" width="65%" /&gt;
 &lt;p class="caption"&gt;Figure. GIF for experiment settings&lt;/p&gt;
 &lt;/div&gt;
 
@@ -168,38 +197,37 @@ layout: true
 
 &lt;img src="image/toolbar-icons-3.png" width="20%" style="display: block; margin: auto;" /&gt;
 
-.center[.gray.bol[Figure 3. The last five toolbar's icons &lt;br/&gt; (Run the study online&lt;sup&gt;13&lt;/sup&gt;, Sync with web project&lt;sup&gt;14&lt;/sup&gt;, &lt;br/&gt;Find existing study online&lt;sup&gt;15&lt;/sup&gt;, Log in&lt;sup&gt;16&lt;/sup&gt;, View details of the project&lt;sup&gt;17&lt;/sup&gt;)]]
+.center[.gray.bold[Figure 3. The last five toolbar's icons &lt;br/&gt; (Run the study online&lt;sup&gt;13&lt;/sup&gt;, Sync with web project&lt;sup&gt;14&lt;/sup&gt;, &lt;br/&gt;Find existing study online&lt;sup&gt;15&lt;/sup&gt;, Log in&lt;sup&gt;16&lt;/sup&gt;, View details of the project&lt;sup&gt;17&lt;/sup&gt;)]]
 
-Before you push your study online, you need to login to the Pavlovia. You can either login using the .bg-main4[Login icon] above _or_  login using the .bg-main4[Pavlovia.org] tab.
+Before you push your study online, you need to login to the Pavlovia. You can either login using the .bg-gray[Login icon] above _or_  login using the .bg-gray[Pavlovia.org] tab.
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="image/loginPavlovia.png" alt="Logging in on Pavlovia via the PsychoPy 3 Builder" width="35%" /&gt;
-&lt;p class="caption"&gt;Logging in on Pavlovia via the PsychoPy 3 Builder&lt;/p&gt;
-&lt;/div&gt;
+&lt;img src="image/loginPavlovia.png" width="35%" style="display: block; margin: auto;" /&gt;
+
+.center[.gray.bold[Logging in on Pavlovia via the PsychoPy 3 Builder]]
 
 ---
 layout:false
-background-image: url(image/stars-melanie.jpg)
+background-image: url(image/transition.jpg)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, bottom
 
-# .white[Getting Started &lt;br/&gt;&lt;br/&gt;(Component, Routine, &amp; Loop)]
+# .font_medium[.black[Getting Started &lt;br/&gt;&lt;br/&gt;(Basics)]]
 
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-.right[.white[Photo by &lt;a href="https://unsplash.com/@m2creates?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Melanie Magdalena&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/dark-purple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+.right[.black[Photo by &lt;a href="https://unsplash.com/@scottwebb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Scott Webb&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
   ]]
 
 ---
 ## Add New Routine
 
-1. On the ***Flow*** window, select .bg-main4[Insert Routine]  ➡️ .bg-main4[   (new) ]
+1. On the ***Flow*** window, select .bg-gray[Insert Routine]  ➡️ .bg-gray[ (new) ]
 2. A new routine window will pop up. Enter a meaningful name for the new routine. Click 🆗 .
-3. Now you should see the Routine appears as tab on the ***Routines*** window.
+3. Now you should see your Routine Name appears as tab on top of the ***Routines*** window.
 
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="gif/add-new-routine.gif" alt="GIF for adding new routine" width="60%" /&gt;
+&lt;img src="gif/add-new-routine.gif" alt="GIF for adding new routine" width="65%" /&gt;
 &lt;p class="caption"&gt;GIF for adding new routine&lt;/p&gt;
 &lt;/div&gt;
 
@@ -211,7 +239,7 @@ layout: true
 ---
 
 1. On the ***Components*** window, select the type of component that you want. 
-Under .br-main4[Favorites], a few commonly used components are listed. 
+Under .bg-gray[Favorites], a few commonly used components are listed. 
 2. They typically represent either stimuli (e.g. **Image** or **Text** Components), or methods of responding (e.g. **Mouse** or **Keyboard** Components)
 3. Clicking on any of the components will result in a pop-up window. 
 
@@ -221,33 +249,36 @@ Under .br-main4[Favorites], a few commonly used components are listed.
 &lt;/div&gt;
 ---
 
-.left-column[
 - PsychoPy is an open-source program, so the components are continuously being updated. 
 
 - In the latest version **(v2021.2.2)**, 33 components are available (updated on 2021-08-12). [More details here.](https://www.psychopy.org/builder/components.html)
-]
 
-.right-column[
+
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="image/component-type.png" alt="The library of the components available in the PsychoPy3 (v2020.2.10)&amp;lt;U+FE0F&amp;gt;" width="60%" /&gt;
+&lt;img src="image/component-type.png" alt="The library of the components available in the PsychoPy3 (v2020.2.10)&amp;lt;U+FE0F&amp;gt;" width="40%" /&gt;
 &lt;p class="caption"&gt;The library of the components available in the PsychoPy3 (v2020.2.10)&lt;U+FE0F&gt;&lt;/p&gt;
 &lt;/div&gt;
-]
+
 ---
-### Text
+class: split-two black
+layout: false
 
-.pull-left[
+### .purple[&lt;br&gt;Properties of Text Component&lt;br&gt;]
 
+.column[
 
-&lt;div class="figure"&gt;
-&lt;img src="image/text-component.png" alt="Pop-up window for text component" width="100%" /&gt;
-&lt;p class="caption"&gt;Pop-up window for text component&lt;/p&gt;
-&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/text-component1.png" width="80%" style="display: block; margin: auto;" /&gt;
 
 ]
 
-.pull-right[
-***General***
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Basic** 
 
 1️⃣ __ name(string)__: The name should contain only letters, numbers and underscores (no punctuation marks or spaces).
 
@@ -255,131 +286,308 @@ Under .br-main4[Favorites], a few commonly used components are listed.
 
 3️⃣ __stop__: The duration for which the stimulus is presented.
 
-7️⃣ __text__: Text to be shown
+4️⃣ __text__: Text to be shown
+
 ]
+
+???
+Please note, we only cover the few functions that we use frequently.
+
 ---
-### Text
+class: split-two with-thick-border border-white
 
-.pull-left[
+### .purple[&lt;br&gt;Properties of Text Component&lt;br&gt;]
 
+.column[
 
-&lt;div class="figure"&gt;
-&lt;img src="image/text-component.png" alt="Pop-up window for text component" width="70%" /&gt;
-&lt;p class="caption"&gt;Pop-up window for text component&lt;/p&gt;
-&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/text-component2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+.footnote.gray[
+[1] See *Additional Materials* section or [*PsychoPy website*](https://www.psychopy.org/general/units.html) for more information.]
+
 ]
 
-.pull-right[
-***Appearance and Formatting***
 
-4️⃣ **color**:The color of the text(right-click for more color)
+.column.black[
 
-5️⃣ __letter height__: The height of the characters in the given units of the stimulus/window.
+&lt;br&gt;&lt;br&gt;
 
-6️⃣ __position__: [x, y] The position of the centre of the stimulus, in the units specified by the stimulus or window
+### .deep-purple[Text]
+
+💻 **Layout**
+
+1️⃣ __position__: [x, y] The position of the centre of the stimulus, in the units specified by the stimulus or window
+
+2️⃣ __spatial Unit&lt;sup&gt;1&lt;/sup&gt;__
+
+- deg, cm, pix, norm, or inherit from window
+
+- See Slide \#66 for more information. 
+
+3️⃣ __orientation__:The orientation of the stimulus in degree.
+]
+
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[&lt;br&gt;Properties of Text Component&lt;br&gt;]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/text-component3.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Appearance** 
+
+1️⃣ __foreground color__: The color of the text
+
+2️⃣ __color space__: We usually use RGB color space. All colors are represented by a triplet of values that specify the red green and blue intensities, with each value ranges from -1 to +1.
+
+Examples:
+- [1,1,1] is white
+- [1.0,-1,-1] is red
+
+&lt;br&gt;
+
+.gray[Tips. You can right-click the mouse to select the color, instead of stating the RGB values.]
+
+
+]
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[&lt;br&gt;Properties of Text Component&lt;br&gt;]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/text-component4.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Formatting** 
+
+1️⃣ __font__: The font of the text
+
+2️⃣ __letter height__: The height of the characters in the given units of the stimulus/window.
 
 ***Static and non-static stimuli*** 😥
 
-8️⃣ __Drop-down__: 
-*Constant*: For static stimuli
-*Set every repeat/ Set every frame*: For changing stimuli
+⚠️ __Drop-down__: 
+- .pink[Constant]: For static stimuli
+- .pink[Set every repeat/ Set every frame]: For changing stimuli
+
 ]
 
 ???
 
 Make sure that you explain "Static and non-static stimuli". 
 ---
-### Text
-.pull-left[
+layout: false
+class: split-two with-thick-border border-white
 
-&lt;div class="figure"&gt;
-&lt;img src="image/text-component-advanced.png" alt="Pop-up window for text component" width="70%" /&gt;
-&lt;p class="caption"&gt;Pop-up window for text component&lt;/p&gt;
-&lt;/div&gt;
-]
+### .purple[&lt;br&gt;Properties of Image Component&lt;br&gt;]
 
-.pull-right[
+.column[
 
-**Units for the window and stimuli**
-
-1️⃣ __ Unit&lt;sup&gt;1&lt;/sup&gt;__
-
-- **Height**: It is specified relative to the height of the window (note the window, not the screen). For a standard widescreen (16:10 aspect ratio) the bottom left of the screen is (-0.8,-0.5) and top-right is (+0.8,+0.5).
-- **Norm**: In normalised (‘norm’) units the window ranges in both x and y from -1 to +1. That is, the top right of the window has coordinates (1,1), the bottom left is (-1,-1). 
-- **pix**: The sizes are specific to the monitor (because all monitors differ in pixel size). 
-
-.footnote[
-[1] See *Additional Materials* section or [*PsychoPy website*](https://www.psychopy.org/general/units.html) for more information.]
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/image-component1.png" width="80%" style="display: block; margin: auto;" /&gt;
 
 ]
----
-### Image
-.pull-left[
 
+.column[
 
+&lt;br&gt;&lt;br&gt;
 
-&lt;div class="figure"&gt;
-&lt;img src="image/image-component.png" alt="Pop-up window for image component" width="90%" /&gt;
-&lt;p class="caption"&gt;Pop-up window for image component&lt;/p&gt;
-&lt;/div&gt;
-]
+### .deep-purple[Text]
 
-.pull-right[
+💻 **Basic** 
 
-The first three variables (`name`, `start`, `stop`) are the same. 
+The rests are the same as the Text properties.
 
-1️⃣ __Image__: Filename of the image formats (e.g. tif, jpg, bmp, png, etc.).
-
-2️⃣ _Position__: [x, y] The position of the centre of the stimulus, in the units specified by the stimulus or window
-
-3️⃣ __Size__: [x, y] The size of the stimulus in the given units of the stimulus/window. 
-
-4️⃣ __Units__: Units deg, cm, pix, norm, or inherit from window
-]
----
-### Image
-.pull-left[
-
-
-
-&lt;div class="figure"&gt;
-&lt;img src="image/image-component-advanced.png" alt="Pop-up window for image component" width="90%" /&gt;
-&lt;p class="caption"&gt;Pop-up window for image component&lt;/p&gt;
-&lt;/div&gt;
-]
-
-.pull-right[
-
-The first three variables (`name`, `start`, `stop`) are the same. 
-
-1️⃣ __color__: The color of the text(right-click for more color.
-
-2️⃣ __Mask__: A filename to  define the shape (e.g. circle will make the patch circular) or something which overlays the patch
+1️⃣ __image__: You can select the image file (e.g. tif, jpg, bmp, png, etc.) with the file icon. 
 
 ]
 ---
-### Keyboard
-.pull-left[
+layout: false
+class: split-two with-thick-border border-white
 
+### .purple[&lt;br&gt;Properties of Image Component&lt;br&gt;]
 
+.column[
 
-&lt;div class="figure"&gt;
-&lt;img src="image/keyboard-component.png" alt="Pop-up window for keyboard component" width="90%" /&gt;
-&lt;p class="caption"&gt;Pop-up window for keyboard component&lt;/p&gt;
-&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/image-component2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
 ]
 
-.pull-right[
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Layout** 
+
+The rests are the same as the Text properties.
+
+1️⃣ __size [sizex, sizey]__: The size of the stimulus in the selected  units of the stimulus/window. 
+
+- flip horizontal: Flip the image along the horizontal axis
+
+- flip vertically: Flip the image along the vertical axis
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+.gray[.bold[Tips:] For image, it is best if we use set the pix units to appropriate dimension so that you don't exhaust your laptop processor memory space. Additonally, images which are square and powers of two (32, 64, 128, etc.)]
+
+]
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[&lt;br&gt;Properties of Image Component&lt;br&gt;]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/image-component3.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Appearance** 
+
+Exactly the same as the Text properties.
+
+]
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[&lt;br&gt;Properties of Image Component&lt;br&gt;]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/image-component4.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Texture** 
+
+Exactly the same as the Text properties.
+
+1️⃣ __mask__: A second layer which overlays the image.
+
+2️⃣ __texture resolution__: We use this as grating. 
+
+3️⃣  __interpolate__: Interpolation is inbetweening, or filling in frames between the key frames. If linear is selected then linear interpolation will be applied when the image is rescaled to the appropriate size for the screen. Nearest will use a nearest-neighbour rule.
+]
+
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[&lt;br&gt;Properties of Keyboard Component&lt;br&gt;]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/keyboard-component1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Basic** 
+
+Almost identital the same as the Text and Image properties.
+
 1️⃣ __Force end of Routine__: If this box is checked then the_ Routine_ will end as soon as one of the allowed keys is pressed.
 
-2️⃣ __Allowed keys__: A list of allowed keys
+2️⃣ __Allowed keys__: A list of allowed keyboard keys
 
-3️⃣ __Store__: Store either last key, first key, all keys, nothing. The response time will also be stored if a keypress is recorded. 
-
-4️⃣ __Store correct__: Check this box if you wish to store whether or not this key press was correct.
-
-5️⃣ __Correct Answer__: Defines what would constitute a correct answer e.g. left, 1 or  $corrAns 
 ]
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[&lt;br&gt;Properties of Keyboard Component&lt;br&gt;]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="image/keyboard-component2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.column[
+
+&lt;br&gt;&lt;br&gt;
+
+### .deep-purple[Text]
+
+💻 **Data** 
+
+
+
+1️⃣ __Store__: Store either last key, first key, all keys, nothing. The response time will also be stored if a keypress is recorded. 
+
+2️⃣ __Store correct__: Check this box if you wish to store whether or not this key press was correct.
+
+3️⃣ __Correct Answer__: Defines what would constitute a correct answer e.g. left, 1 or  $corrAns 
+
+&lt;br&gt;&lt;br&gt;
+
+⚠️ If you want to collect responses from a participant, you need to select all the three functions above, or else your experiment will just run.
+
+.gray[More information is available at the [PsychoPy webpage](https://www.psychopy.org/builder/components/keyboard.html)]
+
+]
+
 ---
 layout: false
 
@@ -389,25 +597,28 @@ layout: false
 - Loops control the repetition of Routines and the choice of stimulus parameters for each. 
 
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="gif/add-new-loop.gif" alt="GIF for adding new loop" width="50%" /&gt;
+&lt;img src="gif/add-new-loop.gif" alt="GIF for adding new loop" width="65%" /&gt;
 &lt;p class="caption"&gt;GIF for adding new loop&lt;/p&gt;
 &lt;/div&gt;
 
 ---
-background-image: url(image/projects-octavianDan.jpg)
+background-image: url(image/leaf-jazmin.jpg)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, middle
 
-# .white[Getting Started &lt;br/&gt;&lt;br/&gt;(Designing Stoop Task)]
+# &lt;br&gt;&lt;br&gt;
 
-.footnote[.white[Photo by &lt;a href="https://unsplash.com/@octadan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Octavian Dan&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/purple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+# .black[Getting Started &lt;br/&gt;&lt;br/&gt;(Designing Stoop Task)]
+
+.footnote[.black[Photo by &lt;a href="https://unsplash.com/@jazminantoinette?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Jazmin Quaynor&lt;/a&gt; on &lt;a href="https://unsplash.com/collections/2183251/minimalisty?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
   ]]
   
 ---
 layout: true
 
-## .deep-purple[Stroop Task]
+# .gray[Stroop Task]
+
 ---
 
 The Stroop effect is the finding that naming the color of the first set of words is easier and quicker than the second.
@@ -418,18 +629,46 @@ The Stroop effect is the finding that naming the color of the first set of words
 
 &lt;img src="gif/stroop.gif" width="40%" style="display: block; margin: auto;" /&gt;
 ---
+
 ### Step 1: Download files needed
 
-Download and unzip the file from [Github](https://github.com/sohmeiling/workshops_PsychoPy). Remember to save the folder in the Desktop 
-(Warning!! Do not save the folder on a cloud-based storage such as OneDrive or Dropbox)
+Download and unzip the file from [Github](https://github.com/sohmeiling/Workshop_M_Connect) or [download as zip here &lt;i class="fa fa-download"&gt;&lt;/i&gt; ](https://github.com/sohmeiling/Workshop_M_Connect/archive/refs/heads/main.zip). Remember to save the folder in the .red[Desktop ]
+
+⚠️  .pink[Warning!! Do not save the folder on a cloud-based storage such as OneDrive or Dropbox). It should be in the C::drive]
+
+&lt;br&gt;
+--
 
 ### Step 2: Open the PsychoPy3 Builder
 
 In the unzipped folder, you should see multiple folders. Open the **.psyexp** file under the **practical-stroop** folder
 
-Workshop_M_Connect  ➡️ practical-stroop  ➡️ stroop-test.psyexp
+Workshop_M_Connect-Main  ➡️ Workshop_M_Connect-Main  ➡️ practical_Build_Stroop  ➡️ stroop-test.psyexp
+
+Select the .pink[stroop-test.psyexp]  ➡️  .pink[right-click]  ➡️ .pink[open with PsychoPy]
+
+.footnote[
+.gray[Note. A readme file will pop up when you open the file. Please briefly glance through the study information before you exit the readme file.]]
 
 ---
+background-image: url(image/pause.jpg)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, middle
+layout: false
+
+# .black[Let's pause for a moment]
+
+.footnote[.grey[Photo by &lt;a href="https://unsplash.com/@scottwebb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Scott Webb&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]]
+
+---
+layout: true
+
+# .gray[Stroop Task]
+
+---
+
 ### Step 3: Create Stimuli
 
 Before you create any experiment, it is important that you are familiar with the task. We designed our study based on the Stroop Color and Word Test (SCWT) in Rivera's et al. (2015) study.
@@ -444,102 +683,362 @@ There are three kinds of Stroop task: _Stroop Word_, _Stroop Color_, and _Stroop
 &lt;p class="caption"&gt;Stroop Task&lt;/p&gt;
 &lt;/div&gt;
 ---
+
 ### Step 3: Create Stimuli
-We need to list out all the possible combinations of **Word Stroop**. 
+We need to list out all the possible combinations of **Word Stroop**. We have created the stimuli file for you. It is in the .bg-gray[.bold[Practical_Build_stroop]] folder. Please use the .pink[**wordPractice_stim.xlsx**] for the following task.
+
+--
 
 &lt;table&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; type &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; practiceWord &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; practiceColor &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; corrResponse &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; type &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; practiceWord &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; practiceColor &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; corrResponse &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Word &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; red &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; black &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; left &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Word &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; red &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; black &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; left &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Word &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; green &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; black &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; up &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Word &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; green &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; black &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; up &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Word &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; blue &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; black &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; right &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Word &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; blue &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; black &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; right &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-We have created the stimuli file for you. Please use the **wordPractice_stim.xlsx** for the following task. 
-
 In the .xlsx file, there are _four_ variable names. 
 
-- ***type***. The type of Stroop Task
+- **type**. The type of Stroop Task
 
-- ***practiceWord***. The words presented on the screen
+- **practiceWord**. The words presented on the screen
 
-- ***practiceColor***. The colors of the words
+- **practiceColor**. The colors of the words
 
-- ***corrResponse***. The correct key responses/Answer
+- **corrResponse**. The correct key responses/Answer
 
 ---
+layout: true
+
+# .gray[Stroop Task]
+
 ### Step 4: Create three routines
 
-- Routine 1: Welcome Routine (name it "Welcome")
-- Routine 2: Practice Routine (name it "Practice_Trial")
-- Routine 3: End Routine (name it "End")
+---
 
-When it comes to naming the **Routine**, **variables**, and **Loop**, there are a few rules that you have to follow. For example, 
+We need to create three routines in the .pink[stroop-test.psyexp]:
+- Routine 1: .bg-gray[Welcome] Routine (name it "Welcome")
+- Routine 2: .bg-gray[Practice] Routine (name it "Practice_Trial")
+- Routine 3: .bg-gray[End] Routine (name it "End")
+
+--
+
+.teal[When it comes to naming the **Routine**, **variables**, and **Loop**, there are a few rules that you have to follow. For example, 
 1.  Variables names must start with a letter or an underscore
 2. The remainder of your variable name may consist of letters, numbers and underscores. Space is not allowed.
-3. **Names are case sensitive**
+3. **Names are case sensitive**]
 
-For the purpose of this workshop, we have created the routines for you. You just need to click `Insert Routine` and arrange the routines in the **Flow** window, as shown in the figure below. 
+---
+
+For the purpose of this workshop, we have created the routines for you. Now, let us arrange the routines in the ***Flow*** window. You can click the .bg-gray[Insert Routine]. Please arrange the routines as shown in the figure below. 
 
 &lt;div class="figure" style="text-align: center"&gt;
 &lt;img src="image/stroop-add-routine.png" alt="Stroop Task" width="50%" /&gt;
 &lt;p class="caption"&gt;Stroop Task&lt;/p&gt;
 &lt;/div&gt;
 ---
+layout: true
+
+# .gray[Stroop Task]
+
 ### Step 5: Create components for each routine
-#### Step 5.1: Create components for the Welcome routine
-In the **Welcome** routine, create two components. 
+
+---
+
+In the .bg-main3[**Welcome**] routine, create two components. 
 
 - Component 1: A **Text** component (name it "welcome_text")
 - Component 2: A **Keyboard** component (name it "welcome_resp")
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="image/welcome-routine.png" alt="Welcome Routine" width="60%" /&gt;
-&lt;p class="caption"&gt;Welcome Routine&lt;/p&gt;
-&lt;/div&gt;
+&lt;img src="image/welcome-routine.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.center[.gray[Welcome Routine]]
+
 ---
-#### Step 5.2: Properties of each component in the Welcome routine
+Properties for .bg-main4[welcome_text] component
 
-Please refer to the images below and follow the number closely.
+.left-column[
 
-.pull-left[
-&lt;div class="figure"&gt;
-&lt;img src="image/welcome_text.png" alt="welcome_text component" width="65%" /&gt;
-&lt;p class="caption"&gt;welcome_text component&lt;/p&gt;
-&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Appearance]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+&lt;img src="image/welcome_text1.png" width="70%" style="display: block; margin: auto;" /&gt;
 
 ]
 
-.pull-right[
-&lt;div class="figure"&gt;
-&lt;img src="image/welcome_resp.png" alt="welcome_resp component" width="80%" /&gt;
-&lt;p class="caption"&gt;welcome_resp component&lt;/p&gt;
-&lt;/div&gt;
+---
+Properties for .bg-main4[welcome_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[Basic]
+
+.font_medium[.pink[Appearance]]
+
+.font_medium[Formatting]
 
 ]
+
+.right-column[
+
+&lt;img src="image/welcome_text2.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+Properties for .bg-main4[welcome_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[Basic]
+
+.font_medium[Appearance]
+
+.font_medium[.pink[Formatting]]
+
+]
+
+.right-column[
+
+&lt;img src="image/welcome_text3.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+Properties for .bg-main4[welcome_resp] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Data]
+
+]
+
+.right-column[
+
+&lt;img src="image/welcome_resp1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+Properties for .bg-main4[welcome_resp] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[Basic]
+
+.font_medium[.pink[Data]]
+
+]
+
+.right-column[
+
+&lt;img src="image/welcome_resp2.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+In the .bg-main3[**Practice_Trial**] routine, create two components. 
+
+- Component 1: A **Text** component (name it "practice_text")
+- Component 2: A **Keyboard** component (name it "practice_resp")
+
+&lt;img src="image/practice_trial.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.center[.gray[Practice_Trial Routine]]
+
+---
+Properties for .bg-main4[practice_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Appearance]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+&lt;img src="image/practice_text1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+Properties for .bg-main4[practice_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[Basic]
+
+.font_medium[.pink[Appearance]]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+&lt;img src="image/practice_text2.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+Properties for .bg-main4[practice_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[Basic]
+
+.font_medium[Appearance]
+
+.font_medium[.pink[Formatting]]
+
+]
+
+.right-column[
+
+&lt;img src="image/practice_text3.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+In the .bg-main3[**End**] routine, create one components. 
+
+- Component 1: A **Text** component (name it "end_text")
+
+
+&lt;img src="image/end-routine.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.center[.gray[End Routine]]
+
+---
+Properties for .bg-main4[end_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Appearance]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+&lt;img src="image/end_text1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+Properties for .bg-main4[end_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[Basic]
+
+.font_medium[.pink[Appearance]]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+&lt;img src="image/end_text2.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+Properties for .bg-main4[end_text] component
+
+.left-column[
+
+&lt;br&gt;&lt;br&gt;
+
+.font_medium[Basic]
+
+.font_medium[Appearance]
+
+.font_medium[.pink[Formatting]]
+
+]
+
+.right-column[
+
+&lt;img src="image/end_text3.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+background-image: url(image/pause.jpg)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, middle
+layout: false
+
+# .black[Let's pause for a moment]
+
+.footnote[.grey[Photo by &lt;a href="https://unsplash.com/@scottwebb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Scott Webb&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]]
+
+
 ---
 #### Step 5.3: Create components for the Practice_Trial routine
 
@@ -937,6 +1436,10 @@ layout: true
 &lt;/div&gt;
 
 ---
+- **Height**: It is specified relative to the height of the window (note the window, not the screen). For a standard widescreen (16:10 aspect ratio) the bottom left of the screen is (-0.8,-0.5) and top-right is (+0.8,+0.5).
+- **Norm**: In normalised (‘norm’) units the window ranges in both x and y from -1 to +1. That is, the top right of the window has coordinates (1,1), the bottom left is (-1,-1). 
+- **pix**: The sizes are specific to the monitor (because all monitors differ in pixel size). .
+
 - **Height**
 
     - Everything is specified relative to the height of the window (note the window, not the screen)
@@ -1028,6 +1531,10 @@ Description for Navon
 class: inverse, center, middle
 
 &lt;a href="http://github.com/sohmeiling"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;&amp;nbsp; sohmeiling&lt;/a&gt;&lt;br&gt;
+
+---
+
+&lt;ion-icon name="logo-github"&gt;&lt;/ion-icon&gt;
 
 ---
 class: center, middle

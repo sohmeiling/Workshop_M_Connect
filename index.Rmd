@@ -5,7 +5,7 @@ institute: "University of Nottingham, Malaysia"
 date: "2021/08/19 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    css: ["tweaks.css", "kunoichi", "ninjutsu"]
+    css: [ "default", "tweaks.css", "ninjutsu", "kunoichi"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -26,6 +26,7 @@ library(xaringanExtra)
 library(here)
 library(knitr)
 library(png)
+library(patchwork)
 
 
 options(htmltools.dir.version = FALSE)
@@ -41,16 +42,16 @@ knitr::opts_chunk$set(
 
 ```
 
-```{r xaringan-tile-view, echo=FALSE}
+```{r xaringan-tile-view, echo=FALSE, include=FALSE}
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
 ```
 
 .title-slide[
 
-# .center[Workshop <br>⚔<br/>Introduction to PsychoPy & Pavlovia]
+# .center[Workshop <br>⚔<br/>Introduction to <br>PsychoPy & Pavlovia]
 
-## .center[<br>Soh Mei Ling | Jonathan Choo | Chong Kai Hao]
+## .center[<br> Kai Hao | Mei Ling | Jonathan Choo ]
 ### .center[University of Nottingham, Malaysia]
 ### .center[19 August 2021]
 
@@ -60,7 +61,31 @@ xaringanExtra::use_broadcast()
 
 ---
 
-## .deep-purple[Objectives]
+## Housekeeping Rules
+
+- All of you will be muted during the Zoom session. If you need to ask a question, please feel free to use the chat box or raise your hand. 
+
+- We have set up a Slack [Slack link here] for any technical difficulties during the session. Please ask your question by posting a new message in the .pink[\#Troubleshooting channel]. 
+
+### Asking questions
+
+- We encourage all the participants to contribute to the workshop by either asking questions or answering questions posted by other participants in Slack. 
+
+- Before you ask any question, you might want to check the threads in the .pink[\#Troubleshooting channel] first, in case your question have been asked. 
+
+- Our beloved TAs will be stationed at the .pink[\#Troubleshooting channel] to answer your questions. 
+
+- This is a huge workshop, so please do understand if we can't get to your question immediately. However, please be ensure that we will definitely answer your question, or at least direct you to someone who knows the answer. 
+
+
+<br><br>
+
+.footnote.gray[
+For those unfamiliar with Slack, you can just click on the Slack link and join the channels. You will need to login with an email address. 
+]
+---
+
+## Objectives
 This workshop will:  
 
 - introduce you all to the basic aspects of the PsychoPy Builder interface
@@ -74,7 +99,7 @@ This workshop will:
 - provide you some resources to go further
 
 ---
-## .deep-purple[Is this workshop suitable for me?]
+## Is this workshop suitable for me?
 
 There is no pre-requisite programming knowledge needed for this workshop, except some knowledge on how to operate your laptop/desktop. 
 
@@ -82,11 +107,15 @@ There is no pre-requisite programming knowledge needed for this workshop, except
 
 - We do some coding, and it is very _minimum_. It is fine if you do not understand the codes. Most of the time, we just _google_ for the answer. 
 
-- Due to time constraint, we will NOT be able to cover all aspects of PsychoPy and Pavlovia. We encourage the participants to explore the links that we provide at the end of the workshop for more information. 
+- Due to time constraint, we will NOT be able to cover all aspects of PsychoPy and Pavlovia. We encourage the participants to explore the links that we provide at the end of the workshop for more information.
+
+<br><br>
+
+* You can find [all material here <i class="fab fa-github"></i> ](https://github.com/sohmeiling/Workshop_M_Connect) or [download as zip here <i class="fa fa-download"></i> ](https://github.com/sohmeiling/Workshop_M_Connect/archive/refs/heads/main.zip)
 
 ---
 layout: true
-## .deep-purple[What is PsychoPy?]
+## What is PsychoPy?
 
 ---
 - PsychoPy is an open-source package for running experiments in Python 
@@ -123,23 +152,23 @@ layout: true
 
 ---
 layout:false
-background-image: url(image/stars-melanie.jpg)
+background-image: url(image/transition.jpg)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, bottom
 
-# .white[Getting Started <br/><br/>(Basics)]
+# .font_medium[.black[Getting Started <br/><br/>(Basics)]]
 
 <br><br><br><br><br>
 
-.right[.white[Photo by <a href="https://unsplash.com/@m2creates?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Melanie Magdalena</a> on <a href="https://unsplash.com/s/photos/dark-purple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+.right[.black[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   ]]
 ---
 ## Builder View
 
 ***Builder*** has three windows: Routines, Components, & Flow
 
-```{r  out.width = "80%", dpi =96, echo=FALSE, fig.align="center"}
+```{r  out.width = "70%", dpi =96, echo=FALSE, fig.align="center"}
 include_graphics("image/builder-view.png")
 ```
 
@@ -147,12 +176,12 @@ include_graphics("image/builder-view.png")
 ---
 ## Coder View
 
-.left-column[
+.column[
 ***Coder*** has two windows: `Integrated Development Environment (IDE) & Output
 ]
 
-.right-column[
-```{r  out.width = "60%", dpi =96, echo=FALSE, fig.align="center"}
+.column[
+```{r  out.width = "45%", dpi =96, echo=FALSE, fig.align="center"}
 include_graphics("image/coder-view.png")
 ```
 ]
@@ -164,7 +193,7 @@ include_graphics("image/coder-view.png")
 
 - __Units__: The default units of the window but these can be overriden by individual components.
 
-```{r  out.width = "50%", fig.cap= "Figure. GIF for experiment settings", fig.align="center", dpi =96, echo=FALSE}
+```{r  out.width = "65%", fig.cap= "Figure. GIF for experiment settings", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("gif/experiment-setting.gif") 
 ```
 
@@ -199,36 +228,38 @@ include_graphics("image/toolbar-icons-2.png")
 include_graphics("image/toolbar-icons-3.png")
 ```
 
-.center[.gray.bol[Figure 3. The last five toolbar's icons <br/> (Run the study online<sup>13</sup>, Sync with web project<sup>14</sup>, <br/>Find existing study online<sup>15</sup>, Log in<sup>16</sup>, View details of the project<sup>17</sup>)]]
+.center[.gray.bold[Figure 3. The last five toolbar's icons <br/> (Run the study online<sup>13</sup>, Sync with web project<sup>14</sup>, <br/>Find existing study online<sup>15</sup>, Log in<sup>16</sup>, View details of the project<sup>17</sup>)]]
 
-Before you push your study online, you need to login to the Pavlovia. You can either login using the .bg-main4[Login icon] above _or_  login using the .bg-main4[Pavlovia.org] tab.
+Before you push your study online, you need to login to the Pavlovia. You can either login using the .bg-gray[Login icon] above _or_  login using the .bg-gray[Pavlovia.org] tab.
 
-```{r  out.width = "35%", fig.align="center", fig.cap= "Logging in on Pavlovia via the PsychoPy 3 Builder", dpi =96, echo=FALSE}
+```{r  out.width = "35%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/loginPavlovia.png")
 ```
 
+.center[.gray.bold[Logging in on Pavlovia via the PsychoPy 3 Builder]]
+
 ---
 layout:false
-background-image: url(image/stars-melanie.jpg)
+background-image: url(image/transition.jpg)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, bottom
 
-# .white[Getting Started <br/><br/>(Component, Routine, & Loop)]
+# .font_medium[.black[Getting Started <br/><br/>(Basics)]]
 
 <br><br><br><br><br>
 
-.right[.white[Photo by <a href="https://unsplash.com/@m2creates?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Melanie Magdalena</a> on <a href="https://unsplash.com/s/photos/dark-purple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+.right[.black[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   ]]
 
 ---
 ## Add New Routine
 
-1. On the ***Flow*** window, select .bg-main4[Insert Routine]  ➡️ .bg-main4[   (new) ]
+1. On the ***Flow*** window, select .bg-gray[Insert Routine]  ➡️ .bg-gray[ (new) ]
 2. A new routine window will pop up. Enter a meaningful name for the new routine. Click 🆗 .
-3. Now you should see the Routine appears as tab on the ***Routines*** window.
+3. Now you should see your Routine Name appears as tab on top of the ***Routines*** window.
 
-```{r  out.width = "60%", fig.cap= "GIF for adding new routine", fig.align="center",dpi =96, echo=FALSE}
+```{r  out.width = "65%", fig.cap= "GIF for adding new routine", fig.align="center",dpi =96, echo=FALSE}
 include_graphics("gif/add-new-routine.gif")
 ```
 
@@ -240,7 +271,7 @@ layout: true
 ---
 
 1. On the ***Components*** window, select the type of component that you want. 
-Under .br-main4[Favorites], a few commonly used components are listed. 
+Under .bg-gray[Favorites], a few commonly used components are listed. 
 2. They typically represent either stimuli (e.g. **Image** or **Text** Components), or methods of responding (e.g. **Mouse** or **Keyboard** Components)
 3. Clicking on any of the components will result in a pop-up window. 
 
@@ -249,31 +280,37 @@ include_graphics("gif/add-new-component.gif")
 ```
 ---
 
-.left-column[
 - PsychoPy is an open-source program, so the components are continuously being updated. 
 
 - In the latest version **(v2021.2.2)**, 33 components are available (updated on 2021-08-12). [More details here.](https://www.psychopy.org/builder/components.html)
-]
 
-.right-column[
-```{r  out.width = "60%", fig.cap= "The library of the components available in the PsychoPy3 (v2020.2.10)️", dpi =96, fig.align="center", echo=FALSE}
+
+```{r  out.width = "40%", fig.cap= "The library of the components available in the PsychoPy3 (v2020.2.10)️", dpi =96, fig.align="center", echo=FALSE}
 include_graphics("image/component-type.png")
 ```
-]
+
 ---
-### Text
+class: split-two black
+layout: false
 
-.pull-left[
+### .purple[<br>Properties of Text Component<br>]
 
+.column[
 
-```{r  out.width = "100%", fig.cap= "Pop-up window for text component", dpi =96, echo=FALSE}
-include_graphics("image/text-component.png") 
+<br><br><br><br><br>
+```{r out.width = "80%", dpi =96, echo=FALSE, fig.align='center'}
+include_graphics("image/text-component1.png") 
 ```
 
 ]
 
-.pull-right[
-***General***
+.column[
+
+<br><br>
+
+### .deep-purple[Text]
+
+💻 **Basic** 
 
 1️⃣ __ name(string)__: The name should contain only letters, numbers and underscores (no punctuation marks or spaces).
 
@@ -281,126 +318,326 @@ include_graphics("image/text-component.png")
 
 3️⃣ __stop__: The duration for which the stimulus is presented.
 
-7️⃣ __text__: Text to be shown
+4️⃣ __text__: Text to be shown
+
 ]
+
+???
+Please note, we only cover the few functions that we use frequently.
+
 ---
-### Text
+class: split-two with-thick-border border-white
 
-.pull-left[
+### .purple[<br>Properties of Text Component<br>]
 
+.column[
 
-```{r  out.width = "70%", fig.cap= "Pop-up window for text component", dpi =96, echo=FALSE}
-include_graphics("image/text-component.png") 
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/text-component2.png") 
 ```
+
+<br><br>
+
+.footnote.gray[
+[1] See *Additional Materials* section or [*PsychoPy website*](https://www.psychopy.org/general/units.html) for more information.]
+
 ]
 
-.pull-right[
-***Appearance and Formatting***
 
-4️⃣ **color**:The color of the text(right-click for more color)
+.column.black[
 
-5️⃣ __letter height__: The height of the characters in the given units of the stimulus/window.
+<br><br>
 
-6️⃣ __position__: [x, y] The position of the centre of the stimulus, in the units specified by the stimulus or window
+### .deep-purple[Text]
+
+💻 **Layout**
+
+1️⃣ __position__: [x, y] The position of the centre of the stimulus, in the units specified by the stimulus or window
+
+2️⃣ __spatial Unit<sup>1</sup>__
+
+- deg, cm, pix, norm, or inherit from window
+
+- See Slide \#66 for more information. 
+
+3️⃣ __orientation__:The orientation of the stimulus in degree.
+]
+
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[<br>Properties of Text Component<br>]
+
+.column[
+
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/text-component3.png") 
+```
+
+]
+
+
+.column[
+
+<br><br>
+
+### .deep-purple[Text]
+
+💻 **Appearance** 
+
+1️⃣ __foreground color__: The color of the text
+
+2️⃣ __color space__: We usually use RGB color space. All colors are represented by a triplet of values that specify the red green and blue intensities, with each value ranges from -1 to +1.
+
+Examples:
+- [1,1,1] is white
+- [1.0,-1,-1] is red
+
+<br>
+
+.gray[Tips. You can right-click the mouse to select the color, instead of stating the RGB values.]
+
+
+]
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[<br>Properties of Text Component<br>]
+
+.column[
+
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/text-component4.png") 
+```
+
+]
+
+
+.column[
+
+<br><br>
+
+### .deep-purple[Text]
+
+💻 **Formatting** 
+
+1️⃣ __font__: The font of the text
+
+2️⃣ __letter height__: The height of the characters in the given units of the stimulus/window.
 
 ***Static and non-static stimuli*** 😥
 
-8️⃣ __Drop-down__: 
-*Constant*: For static stimuli
-*Set every repeat/ Set every frame*: For changing stimuli
+⚠️ __Drop-down__: 
+- .pink[Constant]: For static stimuli
+- .pink[Set every repeat/ Set every frame]: For changing stimuli
+
 ]
 
 ???
 
 Make sure that you explain "Static and non-static stimuli". 
 ---
-### Text
-.pull-left[
+layout: false
+class: split-two with-thick-border border-white
 
-```{r  out.width = "70%", fig.cap= "Pop-up window for text component", dpi =96, echo=FALSE}
-include_graphics("image/text-component-advanced.png") 
+### .purple[<br>Properties of Image Component<br>]
+
+.column[
+
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/image-component1.png") 
 ```
+
 ]
 
-.pull-right[
+.column[
 
-**Units for the window and stimuli**
+<br><br>
 
-1️⃣ __ Unit<sup>1</sup>__
+### .deep-purple[Text]
 
-- **Height**: It is specified relative to the height of the window (note the window, not the screen). For a standard widescreen (16:10 aspect ratio) the bottom left of the screen is (-0.8,-0.5) and top-right is (+0.8,+0.5).
-- **Norm**: In normalised (‘norm’) units the window ranges in both x and y from -1 to +1. That is, the top right of the window has coordinates (1,1), the bottom left is (-1,-1). 
-- **pix**: The sizes are specific to the monitor (because all monitors differ in pixel size). 
+💻 **Basic** 
 
-.footnote[
-[1] See *Additional Materials* section or [*PsychoPy website*](https://www.psychopy.org/general/units.html) for more information.]
+The rests are the same as the Text properties.
+
+1️⃣ __image__: You can select the image file (e.g. tif, jpg, bmp, png, etc.) with the file icon. 
 
 ]
 ---
-### Image
-.pull-left[
+layout: false
+class: split-two with-thick-border border-white
 
+### .purple[<br>Properties of Image Component<br>]
 
+.column[
 
-```{r  out.width = "90%", fig.cap= "Pop-up window for image component", dpi =96, echo=FALSE}
-include_graphics("image/image-component.png") 
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/image-component2.png") 
 ```
+
 ]
 
-.pull-right[
+.column[
 
-The first three variables (`name`, `start`, `stop`) are the same. 
+<br><br>
 
-1️⃣ __Image__: Filename of the image formats (e.g. tif, jpg, bmp, png, etc.).
+### .deep-purple[Text]
 
-2️⃣ _Position__: [x, y] The position of the centre of the stimulus, in the units specified by the stimulus or window
+💻 **Layout** 
 
-3️⃣ __Size__: [x, y] The size of the stimulus in the given units of the stimulus/window. 
+The rests are the same as the Text properties.
 
-4️⃣ __Units__: Units deg, cm, pix, norm, or inherit from window
+1️⃣ __size [sizex, sizey]__: The size of the stimulus in the selected  units of the stimulus/window. 
+
+- flip horizontal: Flip the image along the horizontal axis
+
+- flip vertically: Flip the image along the vertical axis
+
+<br><br><br>
+
+.gray[.bold[Tips:] For image, it is best if we use set the pix units to appropriate dimension so that you don't exhaust your laptop processor memory space. Additonally, images which are square and powers of two (32, 64, 128, etc.)]
+
 ]
+
 ---
-### Image
-.pull-left[
+layout: false
+class: split-two with-thick-border border-white
 
+### .purple[<br>Properties of Image Component<br>]
 
+.column[
 
-```{r  out.width = "90%", fig.cap= "Pop-up window for image component", dpi =96, echo=FALSE}
-include_graphics("image/image-component-advanced.png") 
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/image-component3.png") 
 ```
-]
-
-.pull-right[
-
-The first three variables (`name`, `start`, `stop`) are the same. 
-
-1️⃣ __color__: The color of the text(right-click for more color.
-
-2️⃣ __Mask__: A filename to  define the shape (e.g. circle will make the patch circular) or something which overlays the patch
 
 ]
+
+.column[
+
+<br><br>
+
+### .deep-purple[Text]
+
+💻 **Appearance** 
+
+Exactly the same as the Text properties.
+
+]
+
 ---
-### Keyboard
-.pull-left[
+layout: false
+class: split-two with-thick-border border-white
 
+### .purple[<br>Properties of Image Component<br>]
 
+.column[
 
-```{r  out.width = "90%", fig.cap= "Pop-up window for keyboard component", dpi =96, echo=FALSE}
-include_graphics("image/keyboard-component.png") 
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/image-component4.png") 
 ```
+
 ]
 
-.pull-right[
+.column[
+
+<br><br>
+
+### .deep-purple[Text]
+
+💻 **Texture** 
+
+Exactly the same as the Text properties.
+
+1️⃣ __mask__: A second layer which overlays the image.
+
+2️⃣ __texture resolution__: We use this as grating. 
+
+3️⃣  __interpolate__: Interpolation is inbetweening, or filling in frames between the key frames. If linear is selected then linear interpolation will be applied when the image is rescaled to the appropriate size for the screen. Nearest will use a nearest-neighbour rule.
+]
+
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[<br>Properties of Keyboard Component<br>]
+
+.column[
+
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/keyboard-component1.png") 
+```
+
+]
+
+.column[
+
+<br><br>
+
+### .deep-purple[Text]
+
+💻 **Basic** 
+
+Almost identital the same as the Text and Image properties.
+
 1️⃣ __Force end of Routine__: If this box is checked then the_ Routine_ will end as soon as one of the allowed keys is pressed.
 
-2️⃣ __Allowed keys__: A list of allowed keys
+2️⃣ __Allowed keys__: A list of allowed keyboard keys
 
-3️⃣ __Store__: Store either last key, first key, all keys, nothing. The response time will also be stored if a keypress is recorded. 
-
-4️⃣ __Store correct__: Check this box if you wish to store whether or not this key press was correct.
-
-5️⃣ __Correct Answer__: Defines what would constitute a correct answer e.g. left, 1 or  $corrAns 
 ]
+
+---
+layout: false
+class: split-two with-thick-border border-white
+
+### .purple[<br>Properties of Keyboard Component<br>]
+
+.column[
+
+<br><br><br><br><br>
+```{r  out.width = "80%", fig.align='center', dpi =96, echo=FALSE}
+include_graphics("image/keyboard-component2.png") 
+```
+
+]
+
+.column[
+
+<br><br>
+
+### .deep-purple[Text]
+
+💻 **Data** 
+
+
+
+1️⃣ __Store__: Store either last key, first key, all keys, nothing. The response time will also be stored if a keypress is recorded. 
+
+2️⃣ __Store correct__: Check this box if you wish to store whether or not this key press was correct.
+
+3️⃣ __Correct Answer__: Defines what would constitute a correct answer e.g. left, 1 or  $corrAns 
+
+<br><br>
+
+⚠️ If you want to collect responses from a participant, you need to select all the three functions above, or else your experiment will just run.
+
+.gray[More information is available at the [PsychoPy webpage](https://www.psychopy.org/builder/components/keyboard.html)]
+
+]
+
 ---
 layout: false
 
@@ -409,25 +646,28 @@ layout: false
 - We use ***Flow*** to combine a few ***Routines*** into a single experiment.
 - Loops control the repetition of Routines and the choice of stimulus parameters for each. 
 
-```{r  out.width = "50%", fig.align="center", fig.cap= "GIF for adding new loop", dpi =96, echo=FALSE}
+```{r  out.width = "65%", fig.align="center", fig.cap= "GIF for adding new loop", dpi =96, echo=FALSE}
 include_graphics("gif/add-new-loop.gif") 
 ```
 
 ---
-background-image: url(image/projects-octavianDan.jpg)
+background-image: url(image/leaf-jazmin.jpg)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, middle
 
-# .white[Getting Started <br/><br/>(Designing Stoop Task)]
+# <br><br>
 
-.footnote[.white[Photo by <a href="https://unsplash.com/@octadan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Octavian Dan</a> on <a href="https://unsplash.com/s/photos/purple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+# .black[Getting Started <br/><br/>(Designing Stoop Task)]
+
+.footnote[.black[Photo by <a href="https://unsplash.com/@jazminantoinette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jazmin Quaynor</a> on <a href="https://unsplash.com/collections/2183251/minimalisty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   ]]
   
 ---
 layout: true
 
-## .deep-purple[Stroop Task]
+# .gray[Stroop Task]
+
 ---
 
 The Stroop effect is the finding that naming the color of the first set of words is easier and quicker than the second.
@@ -440,18 +680,46 @@ The Stroop effect is the finding that naming the color of the first set of words
 include_graphics("gif/stroop.gif")
 ```
 ---
+
 ### Step 1: Download files needed
 
-Download and unzip the file from [Github](https://github.com/sohmeiling/workshops_PsychoPy). Remember to save the folder in the Desktop 
-(Warning!! Do not save the folder on a cloud-based storage such as OneDrive or Dropbox)
+Download and unzip the file from [Github](https://github.com/sohmeiling/Workshop_M_Connect) or [download as zip here <i class="fa fa-download"></i> ](https://github.com/sohmeiling/Workshop_M_Connect/archive/refs/heads/main.zip). Remember to save the folder in the .red[Desktop ]
+
+⚠️  .pink[Warning!! Do not save the folder on a cloud-based storage such as OneDrive or Dropbox). It should be in the C::drive]
+
+<br>
+--
 
 ### Step 2: Open the PsychoPy3 Builder
 
 In the unzipped folder, you should see multiple folders. Open the **.psyexp** file under the **practical-stroop** folder
 
-Workshop_M_Connect  ➡️ practical-stroop  ➡️ stroop-test.psyexp
+Workshop_M_Connect-Main  ➡️ Workshop_M_Connect-Main  ➡️ practical_Build_Stroop  ➡️ stroop-test.psyexp
+
+Select the .pink[stroop-test.psyexp]  ➡️  .pink[right-click]  ➡️ .pink[open with PsychoPy]
+
+.footnote[
+.gray[Note. A readme file will pop up when you open the file. Please briefly glance through the study information before you exit the readme file.]]
 
 ---
+background-image: url(image/pause.jpg)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, middle
+layout: false
+
+# .black[Let's pause for a moment]
+
+.footnote[.grey[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ]]
+
+---
+layout: true
+
+# .gray[Stroop Task]
+
+---
+
 ### Step 3: Create Stimuli
 
 Before you create any experiment, it is important that you are familiar with the task. We designed our study based on the Stroop Color and Word Test (SCWT) in Rivera's et al. (2015) study.
@@ -465,10 +733,13 @@ There are three kinds of Stroop task: _Stroop Word_, _Stroop Color_, and _Stroop
 include_graphics("image/swct-ex.png")
 ```
 ---
-### Step 3: Create Stimuli
-We need to list out all the possible combinations of **Word Stroop**. 
 
-```{r, echo=FALSE}
+### Step 3: Create Stimuli
+We need to list out all the possible combinations of **Word Stroop**. We have created the stimuli file for you. It is in the .bg-gray[.bold[Practical_Build_stroop]] folder. Please use the .pink[**wordPractice_stim.xlsx**] for the following task.
+
+--
+
+```{r, echo=FALSE, fig.align='center', out.width = "30%"}
 
 dmx <- tibble(type = c("Word", "Word", "Word"), 
   practiceWord = c("red", "green", "blue"), 
@@ -476,68 +747,356 @@ dmx <- tibble(type = c("Word", "Word", "Word"),
   corrResponse = c("left", "up", "right")
 )
 
-knitr::kable(head(dmx), format = 'html')
+knitr::kable(head(dmx), format = 'html', align = 'c')
 
 ```
 
-We have created the stimuli file for you. Please use the **wordPractice_stim.xlsx** for the following task. 
-
 In the .xlsx file, there are _four_ variable names. 
 
-- ***type***. The type of Stroop Task
+- **type**. The type of Stroop Task
 
-- ***practiceWord***. The words presented on the screen
+- **practiceWord**. The words presented on the screen
 
-- ***practiceColor***. The colors of the words
+- **practiceColor**. The colors of the words
 
-- ***corrResponse***. The correct key responses/Answer
+- **corrResponse**. The correct key responses/Answer
 
 ---
+layout: true
+
+# .gray[Stroop Task]
+
 ### Step 4: Create three routines
 
-- Routine 1: Welcome Routine (name it "Welcome")
-- Routine 2: Practice Routine (name it "Practice_Trial")
-- Routine 3: End Routine (name it "End")
+---
 
-When it comes to naming the **Routine**, **variables**, and **Loop**, there are a few rules that you have to follow. For example, 
+We need to create three routines in the .pink[stroop-test.psyexp]:
+- Routine 1: .bg-gray[Welcome] Routine (name it "Welcome")
+- Routine 2: .bg-gray[Practice] Routine (name it "Practice_Trial")
+- Routine 3: .bg-gray[End] Routine (name it "End")
+
+--
+
+.teal[When it comes to naming the **Routine**, **variables**, and **Loop**, there are a few rules that you have to follow. For example, 
 1.  Variables names must start with a letter or an underscore
 2. The remainder of your variable name may consist of letters, numbers and underscores. Space is not allowed.
-3. **Names are case sensitive**
+3. **Names are case sensitive**]
 
-For the purpose of this workshop, we have created the routines for you. You just need to click `Insert Routine` and arrange the routines in the **Flow** window, as shown in the figure below. 
+---
+
+For the purpose of this workshop, we have created the routines for you. Now, let us arrange the routines in the ***Flow*** window. You can click the .bg-gray[Insert Routine]. Please arrange the routines as shown in the figure below. 
 
 ```{r  out.width = "50%", fig.align="center", fig.cap= "Stroop Task", dpi =96, echo=FALSE}
 include_graphics("image/stroop-add-routine.png")
 ```
 ---
+layout: true
+
+# .gray[Stroop Task]
+
 ### Step 5: Create components for each routine
-#### Step 5.1: Create components for the Welcome routine
-In the **Welcome** routine, create two components. 
+
+---
+
+In the .bg-main3[**Welcome**] routine, create two components. 
 
 - Component 1: A **Text** component (name it "welcome_text")
 - Component 2: A **Keyboard** component (name it "welcome_resp")
 
-```{r  out.width = "60%", fig.align="center", fig.cap= "Welcome Routine", dpi =96, echo=FALSE}
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/welcome-routine.png")
 ```
+
+.center[.gray[Welcome Routine]]
+
 ---
-#### Step 5.2: Properties of each component in the Welcome routine
+Properties for .bg-main4[welcome_text] component
 
-Please refer to the images below and follow the number closely.
+.left-column[
 
-.pull-left[
-```{r  out.width = "65%", fig.cap= "welcome_text component", dpi =96, echo=FALSE}
-include_graphics("image/welcome_text.png")
+<br><br>
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Appearance]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/welcome_text1.png")
 ```
 
 ]
 
-.pull-right[
-```{r  out.width = "80%", fig.cap= "welcome_resp component", dpi =96, echo=FALSE}
-include_graphics("image/welcome_resp.png")
+---
+Properties for .bg-main4[welcome_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[.pink[Appearance]]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/welcome_text2.png")
 ```
 
 ]
+
+---
+Properties for .bg-main4[welcome_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[Appearance]
+
+.font_medium[.pink[Formatting]]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/welcome_text3.png")
+```
+
+]
+
+---
+Properties for .bg-main4[welcome_resp] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Data]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/welcome_resp1.png")
+```
+
+]
+
+---
+Properties for .bg-main4[welcome_resp] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[.pink[Data]]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/welcome_resp2.png")
+```
+
+]
+
+---
+
+In the .bg-main3[**Practice_Trial**] routine, create two components. 
+
+- Component 1: A **Text** component (name it "practice_text")
+- Component 2: A **Keyboard** component (name it "practice_resp")
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/practice_trial.png")
+```
+
+.center[.gray[Practice_Trial Routine]]
+
+---
+Properties for .bg-main4[practice_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Appearance]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/practice_text1.png")
+```
+
+]
+
+---
+Properties for .bg-main4[practice_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[.pink[Appearance]]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/practice_text2.png")
+```
+
+]
+
+---
+Properties for .bg-main4[practice_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[Appearance]
+
+.font_medium[.pink[Formatting]]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/practice_text3.png")
+```
+
+]
+
+---
+
+In the .bg-main3[**End**] routine, create one components. 
+
+- Component 1: A **Text** component (name it "end_text")
+
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/end-routine.png")
+```
+
+.center[.gray[End Routine]]
+
+---
+Properties for .bg-main4[end_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Appearance]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/end_text1.png")
+```
+
+]
+
+---
+Properties for .bg-main4[end_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[.pink[Appearance]]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/end_text2.png")
+```
+
+]
+
+---
+Properties for .bg-main4[end_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[Appearance]
+
+.font_medium[.pink[Formatting]]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/end_text3.png")
+```
+
+]
+
+---
+background-image: url(image/pause.jpg)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, middle
+layout: false
+
+# .black[Let's pause for a moment]
+
+.footnote[.grey[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ]]
+
+
 ---
 #### Step 5.3: Create components for the Practice_Trial routine
 
@@ -865,6 +1424,10 @@ include_graphics("image/units-dropdown.png")
 ```
 
 ---
+- **Height**: It is specified relative to the height of the window (note the window, not the screen). For a standard widescreen (16:10 aspect ratio) the bottom left of the screen is (-0.8,-0.5) and top-right is (+0.8,+0.5).
+- **Norm**: In normalised (‘norm’) units the window ranges in both x and y from -1 to +1. That is, the top right of the window has coordinates (1,1), the bottom left is (-1,-1). 
+- **pix**: The sizes are specific to the monitor (because all monitors differ in pixel size). .
+
 - **Height**
 
     - Everything is specified relative to the height of the window (note the window, not the screen)
@@ -956,6 +1519,10 @@ Description for Navon
 class: inverse, center, middle
 
 <a href="http://github.com/sohmeiling"><i class="fa fa-github fa-fw"></i>&nbsp; sohmeiling</a><br>
+
+---
+
+<ion-icon name="logo-github"></ion-icon>
 
 ---
 class: center, middle
