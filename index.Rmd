@@ -775,22 +775,18 @@ Properties for .bg-main4[welcome_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[.pink[Basic]]
 
 .font_medium[Appearance]
 
 .font_medium[Formatting]
-
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/welcome_text1.png")
 ```
-
 ]
 
 ---
@@ -798,22 +794,18 @@ Properties for .bg-main4[welcome_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[.pink[Appearance]]
 
 .font_medium[Formatting]
-
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/welcome_text2.png")
 ```
-
 ]
 
 ---
@@ -821,22 +813,18 @@ Properties for .bg-main4[welcome_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[Appearance]
 
 .font_medium[.pink[Formatting]]
-
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/welcome_text3.png")
 ```
-
 ]
 
 ---
@@ -844,20 +832,16 @@ Properties for .bg-main4[welcome_resp] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[.pink[Basic]]
 
 .font_medium[Data]
-
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/welcome_resp1.png")
 ```
-
 ]
 
 ---
@@ -865,8 +849,7 @@ Properties for .bg-main4[welcome_resp] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[.pink[Data]]
@@ -874,11 +857,9 @@ Properties for .bg-main4[welcome_resp] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/welcome_resp2.png")
 ```
-
 ]
 
 ---
@@ -899,8 +880,7 @@ Properties for .bg-main4[practice_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[.pink[Basic]]
 
 .font_medium[Appearance]
@@ -910,11 +890,9 @@ Properties for .bg-main4[practice_text] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/practice_text1.png")
 ```
-
 ]
 
 ---
@@ -922,8 +900,7 @@ Properties for .bg-main4[practice_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[.pink[Appearance]]
@@ -933,11 +910,9 @@ Properties for .bg-main4[practice_text] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/practice_text2.png")
 ```
-
 ]
 
 ---
@@ -945,8 +920,7 @@ Properties for .bg-main4[practice_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[Appearance]
@@ -956,11 +930,9 @@ Properties for .bg-main4[practice_text] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/practice_text3.png")
 ```
-
 ]
 
 ---
@@ -968,8 +940,7 @@ Properties for .bg-main4[practice_resp] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[.pink[Basic]]
 
 .font_medium[Data]
@@ -977,11 +948,9 @@ Properties for .bg-main4[practice_resp] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/practice_resp1.png")
 ```
-
 ]
 
 ---
@@ -989,8 +958,7 @@ Properties for .bg-main4[practice_resp] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[.pink[Data]]
@@ -998,11 +966,9 @@ Properties for .bg-main4[practice_resp] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/practice_resp2.png")
 ```
-
 ]
 
 
@@ -1024,8 +990,7 @@ Properties for .bg-main4[end_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[.pink[Basic]]
 
 .font_medium[Appearance]
@@ -1035,11 +1000,9 @@ Properties for .bg-main4[end_text] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/end_text1.png")
 ```
-
 ]
 
 ---
@@ -1047,8 +1010,7 @@ Properties for .bg-main4[end_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[.pink[Appearance]]
@@ -1058,11 +1020,9 @@ Properties for .bg-main4[end_text] component
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/end_text2.png")
 ```
-
 ]
 
 ---
@@ -1070,22 +1030,18 @@ Properties for .bg-main4[end_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[Appearance]
 
 .font_medium[.pink[Formatting]]
-
 ]
 
 .right-column[
-
 ```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/end_text3.png")
 ```
-
 ]
 
 ---
@@ -1102,7 +1058,6 @@ In the ***Flow*** window, .bg-main3[Insert Loop] around the .bg-main3[**Practice
 ```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/practice_loop.png")
 ```
-
 
 ---
 Properties for .bg-main4[practice_loop] component
@@ -1239,23 +1194,23 @@ class: inverse, center, middle
 
 ---
 
+## Did you receive an error message?  
+
+.pull-left[
+
 <br>
-
-- Did you receive an error message?  
-
-
---
-
-```{r  out.width = "20%", fig.cap= "Arghhhh!!!! What happened?", fig.align="center", dpi =96, echo=FALSE}
+```{r  out.width = "50%", fig.cap= "Arghhhh!!!! What happened?", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("gif/error-msg.gif")
 ```
-
+]
 --
-```{r  out.width = "10%", fig.cap= "Hmmmm.....", fig.align="center", dpi =96, echo=FALSE}
+
+.pull-right[
+
+```{r  out.width = "30%", fig.cap= "Hmmmm.....", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("gif/thinking.gif")
 ```
-
-
+]
 ---
 layout: true
 
@@ -1470,8 +1425,7 @@ Properties for .bg-main4[feedback_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[.pink[Basic]]
 
 .font_medium[Appearance]
@@ -1494,8 +1448,7 @@ Properties for .bg-main4[feedback_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[.pink[Appearance]]
@@ -1518,8 +1471,7 @@ Properties for .bg-main4[feedback_text] component
 
 .left-column[
 
-<br><br>
-
+<br>
 .font_medium[Basic]
 
 .font_medium[Appearance]
