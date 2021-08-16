@@ -1634,7 +1634,7 @@ else:
 
 ```
 
-.gray[Under **Begin Routine** tab, you now define what the msg object contains using a simple if-else statement
+.gray[Under **Begin Routine** tab, you now define what the .bg-main[msg] object contains using a simple if-else statement
 
 ]]
 
@@ -1661,7 +1661,7 @@ else:
 
 <br>
 
-If participants did note press any of the response keys, the msg object will now contain .red[“Failed to respond”]
+If participants did not press any of the response keys, the .bg-gray[msg] object will now contain .red[“Failed to respond”]
 
 ]
 
