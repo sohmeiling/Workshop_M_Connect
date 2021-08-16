@@ -78,11 +78,6 @@ xaringanExtra::use_broadcast()
 - This is a huge workshop, so please do understand if we can't get to your question immediately. However, please be ensure that we will definitely answer your question, or at least direct you to someone who knows the answer. 
 
 
-<br><br>
-
-.footnote.gray[
-For those unfamiliar with Slack, you can just click on the Slack link and join the channels. You will need to login with an email address. 
-]
 ---
 
 ## Objectives
@@ -109,9 +104,7 @@ There is no pre-requisite programming knowledge needed for this workshop, except
 
 - Due to time constraint, we will NOT be able to cover all aspects of PsychoPy and Pavlovia. We encourage the participants to explore the links that we provide at the end of the workshop for more information.
 
-<br><br>
-
-* You can find [all material here <i class="fab fa-github"></i> ](https://github.com/sohmeiling/Workshop_M_Connect) or [download as zip here <i class="fa fa-download"></i> ](https://github.com/sohmeiling/Workshop_M_Connect/archive/refs/heads/main.zip)
+- You can find [all material here <i class="fab fa-github"></i> ](https://github.com/sohmeiling/Workshop_M_Connect) or [download as zip here <i class="fa fa-download"></i> ](https://github.com/sohmeiling/Workshop_M_Connect/archive/refs/heads/main.zip)
 
 ---
 layout: true
@@ -152,17 +145,14 @@ layout: true
 
 ---
 layout:false
-background-image: url(image/transition.jpg)
+background-image: url(image/gettingStart1.png)
 background-position: 50% 50%
 background-size: cover
-class: inverse, center, bottom
+class: inverse, center, middle
 
-# .font_medium[.black[Getting Started <br/><br/>(Basics)]]
 
-<br><br><br><br><br>
-
-.right[.black[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  ]]
+.footnote[.black[Photo by [Scott Webb](https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)]
+  ]
 ---
 ## Builder View
 
@@ -240,17 +230,15 @@ include_graphics("image/loginPavlovia.png")
 
 ---
 layout:false
-background-image: url(image/transition.jpg)
+background-image: url(image/anyQ.png)
 background-position: 50% 50%
 background-size: cover
-class: inverse, center, bottom
+class: inverse, center, middle
 
-# .font_medium[.black[Getting Started <br/><br/>(Basics)]]
 
-<br><br><br><br><br>
-
-.right[.black[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  ]]
+.footnote[.black[Photo by [Sarah Dorweiler
+](https://unsplash.com/@sarahdorweiler) on [Unsplash](https://unsplash.com/)]
+  ]
 
 ---
 ## Add New Routine
@@ -262,6 +250,18 @@ class: inverse, center, bottom
 ```{r  out.width = "65%", fig.cap= "GIF for adding new routine", fig.align="center",dpi =96, echo=FALSE}
 include_graphics("gif/add-new-routine.gif")
 ```
+
+---
+layout:false
+background-image: url(image/next.png)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, middle
+
+
+.footnote[
+Photo by <a href="https://unsplash.com/@agatacreate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Agata Create</a> on <a href="https://unsplash.com/@jazminantoinette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+]
 
 ---
 layout: true
@@ -471,6 +471,7 @@ The rests are the same as the Text properties.
 1️⃣ __image__: You can select the image file (e.g. tif, jpg, bmp, png, etc.) with the file icon. 
 
 ]
+
 ---
 layout: false
 class: split-two with-thick-border border-white
@@ -502,7 +503,7 @@ The rests are the same as the Text properties.
 
 - flip vertically: Flip the image along the vertical axis
 
-<br><br><br>
+<br><br>
 
 .gray[.bold[Tips:] For image, it is best if we use set the pix units to appropriate dimension so that you don't exhaust your laptop processor memory space. Additonally, images which are square and powers of two (32, 64, 128, etc.)]
 
@@ -630,13 +631,25 @@ include_graphics("image/keyboard-component2.png")
 
 3️⃣ __Correct Answer__: Defines what would constitute a correct answer e.g. left, 1 or  $corrAns 
 
-<br><br>
+<br>
 
-⚠️ If you want to collect responses from a participant, you need to select all the three functions above, or else your experiment will just run.
-
-.gray[More information is available at the [PsychoPy webpage](https://www.psychopy.org/builder/components/keyboard.html)]
+⚠️ .gray[If you want to collect responses from a participant, you need to select all the three functions above, or else your experiment will just run. More information is available at the [PsychoPy webpage](https://www.psychopy.org/builder/components/keyboard.html)]
 
 ]
+
+---
+layout:false
+background-image: url(image/next2.png)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, bottom
+
+
+.footnote[
+Photo by <a href="https://unsplash.com/@sarahdorweiler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sarah Dorweiler</a> on <a href="https://unsplash.com/@sarahdorweiler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+]
+
 
 ---
 layout: false
@@ -646,19 +659,16 @@ layout: false
 - We use ***Flow*** to combine a few ***Routines*** into a single experiment.
 - Loops control the repetition of Routines and the choice of stimulus parameters for each. 
 
-```{r  out.width = "65%", fig.align="center", fig.cap= "GIF for adding new loop", dpi =96, echo=FALSE}
+```{r  out.width = "60%", fig.align="center", fig.cap= "GIF for adding new loop", dpi =96, echo=FALSE}
 include_graphics("gif/add-new-loop.gif") 
 ```
 
 ---
-background-image: url(image/leaf-jazmin.jpg)
+background-image: url(image/gettingStart2.png)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, middle
 
-# <br><br>
-
-# .black[Getting Started <br/><br/>(Designing Stoop Task)]
 
 .footnote[.black[Photo by <a href="https://unsplash.com/@jazminantoinette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jazmin Quaynor</a> on <a href="https://unsplash.com/collections/2183251/minimalisty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   ]]
@@ -702,13 +712,12 @@ Select the .pink[stroop-test.psyexp]  ➡️  .pink[right-click]  ➡️ .pink[o
 .gray[Note. A readme file will pop up when you open the file. Please briefly glance through the study information before you exit the readme file.]]
 
 ---
-background-image: url(image/pause.jpg)
+background-image: url(image/pause1.png)
 background-position: 50% 50%
 background-size: cover
 class: inverse, center, middle
 layout: false
 
-# .black[Let's pause for a moment]
 
 .footnote[.grey[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   ]]
@@ -1003,6 +1012,49 @@ include_graphics("image/practice_text3.png")
 ]
 
 ---
+Properties for .bg-main4[practice_resp] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Data]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/practice_resp1.png")
+```
+
+]
+
+---
+Properties for .bg-main4[practice_resp] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[.pink[Data]]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/practice_resp2.png")
+```
+
+]
+
+
+---
 
 In the .bg-main3[**End**] routine, create one components. 
 
@@ -1085,95 +1137,43 @@ include_graphics("image/end_text3.png")
 ]
 
 ---
-background-image: url(image/pause.jpg)
-background-position: 50% 50%
-background-size: cover
-class: inverse, center, middle
-layout: false
+layout: true
 
-# .black[Let's pause for a moment]
+# .gray[Stroop Task]
 
-.footnote[.grey[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  ]]
-
-
----
-#### Step 5.3: Create components for the Practice_Trial routine
-
-In the **Practice_Trial** routine, create two components. 
-
-- Component 1: A **Text** component (name it "stim_text")
-- Component 2: A **Keyboard** component (name it "practice_resp")
-
-
-```{r  out.width = "60%", fig.align="center", fig.cap= "Practice_Trial Routine", dpi =96, echo=FALSE}
-include_graphics("image/practice_trial.png")
-```
----
-#### Step 5.4: Properties of each component in the Practice_Trial routine
-
-Please refer to the images below and follow the number closely.
-
-.pull-left[
-```{r  out.width = "65%", fig.cap= "stim_text component", dpi =96, echo=FALSE}
-include_graphics("image/stim_text.png")
-```
-
-]
-
-.pull-right[
-```{r  out.width = "80%", fig.cap= "practice_resp component", dpi =96, echo=FALSE}
-include_graphics("image/practice_resp.png")
-```
-
-]
----
-#### Step 5.5: Create components for the End routine
-
-In the **End** routine, create one component. 
-
-- Component 1: A **Text** component (name it "end_text")
-
-
-```{r  out.width = "60%", fig.align="center", fig.cap= "End routine", dpi =96, echo=FALSE}
-include_graphics("image/end-routine.png")
-```
----
-#### Step 5.6: Properties of the component in the End routine
-
-Please refer to the images below and follow the number closely.
-
-
-```{r  out.width = "75%", fig.cap= "end_text component", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("image/end_text2.png")
-```
-
-
----
 ### Step 6: Create a loop in the Flow window
 
-In the ***Flow*** window, `Insert loop` around the _Practice_Trial_ routine
+---
 
-```{r  out.width = "80%", fig.cap= "Insert Loop", fig.align="center", dpi =96, echo=FALSE}
+In the ***Flow*** window, .bg-main3[Insert Loop] around the .bg-main3[**Practice_Trial**] routine. Name the new loop, .bg-main3[**practice_loop**]
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/practice_loop.png")
 ```
 
+
 ---
-#### Step 6.1: Properties of the _practice_loop_
+Properties for .bg-main4[practice_loop] component
 
-```{r  out.width = "28%", fig.cap= "practice_loop properties", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("image/practice-loop-properties.png")
-```
-
-Note for 4️⃣. 
+.left-column[
 
 Make sure you are in the correct directory. If you follow earlier instruction and have saved your folder in the **Desktop**, then your filepath should be
 
 ```{r}
 
-# Desktop\Workshop_M_Connect\Practical_Build_stroop\colorPractice_stim.xlsx
+# Desktop\Workshop_M_Connect-main\Workshop_M_Connect-main\Practical_Build_stroop\wordPractice_stim.xlsx
 
 ```
+
+]
+
+.right-column[
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/practice_loop1.png")
+```
+
+]
 
 ---
 ### Step 7: Save and run the study
@@ -1189,11 +1189,24 @@ include_graphics("gif/good-job.gif")
 We will take a 10-minute break now. For those interested of customizing the study, please try out the practice tasks in the next two slides. 
 
 ---
+background-image: url(image/pause2.png)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, middle
 layout: false
 
-### Practice Time (5-10 minutes)
 
-- In the **Welcome** routine, modify the `welcome_text` component. You might want to include a longer instruction for the Stroop task. For example, 
+
+.footnote[.grey[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  ]]
+
+---
+layout: false
+
+### Practice Time (5-10 minutes) - Optional
+
+- In the **Welcome** routine, modify the .bg-main4[welcome_text] component. You might want to include a longer instruction for the Stroop task. For example, 
 
 > Welcome! This is a Stroop task. <br/> 
 > <br/> 
@@ -1203,50 +1216,131 @@ layout: false
 > <br/> 
 > Press 'SPACE' to continue.
 
-- In the `welcome_text` component, you can always change the color of the text. Please make sure that it follows the [accessibility code](https://www.washington.edu/accessibility/web/color/). 
+- In the .bg-main4[welcome_text] component, you can always change the color of the text. Please make sure that it follows the [accessibility code](https://www.washington.edu/accessibility/web/color/). 
+
+
+---
+
+### Practice Time (5-10 minutes) - Optional
 
 - In the **Practice_Trial** routine, add another Text component to remind your participants about the keys' response. You will need to adjust the position of the text component. As we are using *height* as our unit, the range for [x, y] position is [-0.8 <x <0.8,  -0.5<y< 0.5]
 
 > Select 'LEFT' for red, 'UP' for green, 'RIGHT' for blue.
 
 ---
-### Practice Time (5-10 minutes)
+
+### Practice Time (5-10 minutes) - Optional
 
 - In the **Experiment Settings**, add some demographic information such as age and gender to the _Experiment Info_.  
 
 - Also, in the **Experiment Settings**, try to change the color of the screen. Now, it is set to grey. (Tips: under the Screen tab)
+
+
+---
+layout: true
+
+# .gray[Stroop Task]
+### Step 8: Create the Trial routine
+
+---
+
+- The .bg-main4[**Trial routine**] is identical to the earlier .bg-main4[**Practice_Trial**] routine. 
+
+--
+
+- Now, your task is to create the components for the .bg-main3[**Trial**] routine. 
+    1. Insert the .bg-main3[**Trial**] Routine
+    2. Create a Text component
+    3. Create a Keyboard component
+    4. Insert a Loop. Use the .pink[_WordStimuli.xlsx_]  file. 
+
+--
+
+- After you are done, try to run the experiment. 
+
+
+---
+
+Now, let's create another ***Routine***. After the .bg-main3[**Practice_Trial**], the participants will attempt the experiment. We can name this new routine, .bg-main3[**Trial**]. 
+
+In the .bg-main3[**Trial**] routine, create two components and loop the routine. 
+
+- Component 1: A **Text** component (name it "trial_text")
+- Component 2: A **Keyboard** component (name it "trial_resp")
+- Loop (name it "trial_loop")
+
+.footnote[.gray[
+If you are unsure of how to Insert New Routine, Create New Component, or Insert Loop, please refer to the previous slides.
+]]
+
+---
+
+- Here's how your ***Routine*** should look like.
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/trial-routine.png")
+```
+
+- After you are done, try to run the experiment. 
+
+
+---
+background-image: url(image/stop.png)
+background-position: 50% 50%
+background-size: cover
+class: inverse, center, middle
+layout: false
+
+
+.footnote[.black[Photo by <a href="https://unsplash.com/@agatacreate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Agata Create</a> on <a href="https://unsplash.com/@sarahdorweiler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+]]
+
+
+---
+
+- Did you receive an error message?  
+
+
+--
+
+```{r  out.width = "20%", fig.cap= "Arghhhh!!!! What happened?", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("gif/error-msg.gif")
+```
+
+--
+```{r  out.width = "10%", fig.cap= "Hmmmm.....", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("gif/thinking.gif")
+```
+
 
 ---
 layout: true
 
 ## Stroop Task
 
----
-### Step 8: Create the Trial routine
-
-- The **Trial routine** is identical to the earlier **Practice_Trial** routine. 
-
-- Now, your task is to create the components for the **Trial** routine. 
-    1. Insert the **Trial** Routine
-    2. Create a Text component
-    3. Create a Keyboard component
-    4. Insert a Loop. Use the _WordStimuli.xlsx_  file. 
-
-- After you are done, try to run the experiment. 
-
---
-- You should receive an error message if you follow the properties settings in  Step 5-6. 
-
-```{r  out.width = "20%", fig.cap= "Arghhhh!!!! What happened?", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("gif/error-msg.gif")
-```
-
----
 ### Step 9: Understanding the error
 
-.pull-left[
-- First, look into the _WordStimuli.xlsx_  file.
+---
 
+.pull-left[
+- First, let's look into the Excel file used for .bg-main4[Practice_Trial] routine (.teal[_WordPractice_stim.xlsx_]  file). 
+
+```{r, echo=FALSE, fig.align='center', out.width = "30%"}
+
+dmx <- tibble(type = c("Word", "Word", "Word"), 
+  practiceWord = c("red", "green", "blue"), 
+  practiceColor = c("black", "black", "black"), 
+  corrResponse = c("left", "up", "right")
+)
+
+knitr::kable(head(dmx), format = 'html', align = 'c')
+
+```
+]
+
+
+.pull-right[
+- You should realize that the variables' names are .pink[different]. 
 
 ```{r practice, echo=FALSE}
 stim <- tibble(type = rep("Word", 6), 
@@ -1258,11 +1352,12 @@ stim <- tibble(type = rep("Word", 6),
 knitr::kable(head(stim), format = 'html')
 
 ```
+
 ]
 
-.pull-right[
-- You should realize that the variables' names have changed. 
+---
 
+So, how do we fix the error?  🤔
 
 ```{r echo=FALSE}
 
@@ -1271,49 +1366,42 @@ naming <- tibble(old_names = c("type", "practiceWord", "practiceColor", "corrRes
 
 knitr::kable(head(naming), format = 'html')
 ```
-]
+
+
+ 💭 Make changes in the .bg-main4[**trial_text**] and .bg-main4[**trial_resp**] components. 
+
 ---
-### Step 9: Understanding the error 
-Now, make changes to the **Text** and **Keyboard** components. 
+layout: false
 
-.pull-left[
-First, 
+---
+### Answer
 
-```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("image/stim_text.png")
+```{r  out.width = "100%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/namingError.png")
 ```
-]
-
---
-.pull-right[
-Modify 3️⃣ and 6️⃣
-
-]
 
 ---
-### Step 9: Understanding the error 
 
---
-.pull-left[
-Next, 
+### Answer
 
-```{r  out.width = "80%", fig.cap= "practice_resp component", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("image/practice_resp.png")
-```
-]
---
+<video width="1280" height="960">
+<source src="image/trial-routine.mp4" type="video/mp4">
+</video>
 
-.pull-right[
-Modify 7️⃣
-]
+
 
 ---
+layout: true
+
+# .gray[Stroop Task]
 ### Step 10: Launch the study online
 
+---
 Before you push your study to Pavlovia, make sure that: 
 
 1. You have login into your Pavlovia account. 
 2. You have test-run the experiment and it works on PsychoPy. 
+
 --
 
 ```{r  out.width = "50%", fig.cap= "GIF for launching online", fig.align="center", dpi =96, echo=FALSE}
@@ -1321,20 +1409,28 @@ include_graphics("gif/push-to-pavlovia.gif")
 ```
 
 ---
-layout: false
 
-background-image: url("gif/pavlovia.gif")
-background-position: center
-background-size: contain
+- Next, let's move to Pavlovia to check if your experiment has been uploaded successfully. 🤞
+
+
+```{r  out.width = "50%", fig.cap= "GIF for launching online", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("gif/pavlovia.gif")
+```
+
 
 ---
+layout: true
+
+# .gray[Stroop Task]
 ### Step 11: Counterbalancing
 
-#### Blocking similar conditions 
+---
+
+.deep-purple[Blocking similar conditions] 
 
 Counterbalancing requires a bit of thinking! In our Stroop Task, we have three types of Stroop but if you look carefully, these three tasks are very similar. So, you should not create different Routines for different trials in your blocks (if at all possible). 
 
-- Look at the .xlsx file for the **Practice_Trial** routine. We have created two .xlsx files for _Stroop word Practice_ routine and _Stroop Color Practice_ routine. Both _xlsx_ files have identical variable names. 
+- Look at the .xlsx file for the **Practice_Trial** routine. We have created two .xlsx files: Word Stroop practice file (.pink[wordPractice_stim.xlsx]) and Color Stroop practice file (.pink[colorPractice_stim.xlsx]) . Both _xlsx_ files have identical variable names. 
 
 <br/>
 
@@ -1354,37 +1450,49 @@ include_graphics("image/color-practice.png")
 ]
 
 ---
-### Step 11: Counterbalancing (Blocking similar conditions) 
 
---
 We can collapse both files into a single ***Loop***. 
 
 --
+1. First, look at the conditions.xlsx file. 
+
+```{r  out.width = "30%", fig.cap= "The conditions.xlsx file", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/conditions.png")
+```
+
+2. Next create a loop around the Practice_Trial and Trial routines. 
+
+```{r  out.width = "60%", fig.cap= "The Flow layout", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/counter-loop.png")
+```
+
+
+---
+
 1. In the outer (blocks) loop you set up the conditions file to be conditions.xlsx which creates a variable practiceFile. 
 
 2. Then, in the inner (trials) loop you set the conditions file not to be any file directly but simply $practiceFile. 
 
 3. When PsychoPy starts the loop, it will find the current value of practiceFile and insert the appropriate thing, which will be the name of an conditions file and voila, we're done with counterbalancing. 
 
-```{r  out.width = "30%", fig.cap= "The conditions.xlsx file", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("image/conditions.png")
+--
+
+```{r  out.width = "20%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("gif/anyquestion.gif")
 ```
 
 ---
-### Step 11: Counterbalancing (Blocking similar conditions)
+layout: true
 
-```{r  out.width = "60%", fig.cap= "The Flow layout", fig.align="center", dpi =96, echo=FALSE}
-include_graphics("image/counter-loop.png")
-```
-
----
+# .gray[Stroop Task]
 ### Practice Time (5-10 minutes)
 
-***Practice***
+---
+.deep-purple[***Practice***]
 
-1. This time, you try to create a counterbalancing loop for the **Trial** routine. Use the conditions.xlsx file. 
+1. This time, you try to create a counterbalancing loop for the **Trial** routine. Refer to the conditions.xlsx file. 
 
-2. Try to add instructions for your participants, informing them if the following trial is a Word Stroop, Color Stroop, or Word-color Stroop. 
+2. [Difficult] Try to add instructions for your participants, informing them if the following trial is a Word Stroop, Color Stroop, or Word-color Stroop. YOu will need to consider the structure of the loop.
 
 
 ---
@@ -1395,13 +1503,358 @@ class: inverse, center, middle
 # Part 2 <br/> <br/>(Advanced Functions)
 
 ---
+layout: true
 
+# .gray[Stroop Task]
 ### Step 12: Add a feedback Loop
+---
+
+1. Create a new routine for your Feedback (name it "Feedback").
+
+2. Create two new components for your Feedback routine: 
+
+    - A Text component (name it "feedback_text")
+    - A Code<sup>3</sup> component; can be found under Custom (name it "code")
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/feedback-routine.png")
+```
+
+.footnote[
+.gray[[3] The .pink[code] component has to be at the top of the routine.]
+]
+
+---
+
+<br> 
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/feedback-loop.png")
+```
+
+---
+
+Properties for .bg-main4[feedback_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[.pink[Basic]]
+
+.font_medium[Appearance]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/feedback_text1.png")
+```
+
+]
+
+---
+
+Properties for .bg-main4[feedback_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[.pink[Appearance]]
+
+.font_medium[Formatting]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/feedback_text2.png")
+```
+
+]
+
+---
+
+Properties for .bg-main4[feedback_text] component
+
+.left-column[
+
+<br><br>
+
+.font_medium[Basic]
+
+.font_medium[Appearance]
+
+.font_medium[.pink[Formatting]]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/feedback_text3.png")
+```
+
+]
+
+---
+
+Properties for .bg-main4[code] component
+
+.left-column[
+
+.font_medium[Before Experiment]
+
+.font_medium[.pink[Begin Experiment]]
+
+.font_medium[Begin Routine]
+
+.font_medium[Each Frame]
+
+.font_medium[End Routine]
+
+.font_medium[End Experiment]
+
+]
+
+.right-column[
+
+```{r  out.width = "70%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/code1.png")
+```
+
+]
+
+---
+
+Properties for .bg-main4[code] component
+
+.left-column[
+
+.font_medium[Before Experiment]
+
+.font_medium[.pink[Begin Experiment]]
+
+.font_medium[Begin Routine]
+
+.font_medium[Each Frame]
+
+.font_medium[End Routine]
+
+.font_medium[End Experiment]
+
+]
+
+.right-column[
+
+Under **Begin Experiment**
+
+```{r eval=FALSE}
+
+msg= ""
+```
+
+.gray[
+This allows us to define the message depending on the performance of the participant]
+]
 
 
 
 ---
+
+Properties for .bg-main4[code] component
+
+.left-column[
+
+.font_medium[Before Experiment]
+
+.font_medium[Begin Experiment]
+
+.font_medium[.pink[Begin Routine]]
+
+.font_medium[Each Frame]
+
+.font_medium[End Routine]
+
+.font_medium[End Experiment]
+
+]
+
+.right-column[
+
+Under **Begin Routine**
+
+```{r  eval=FALSE}
+
+if not practice_resp.keys:
+    msg = "Failed to respond"
+elif practice_resp.corr:
+    msg = "Correct!"
+else:
+    msg = "Oops! That was wrong."
+
+```
+
+.gray[Under **Begin Routine** tab, you now define what the msg object contains using a simple if-else statement
+
+]]
+
+---
+
+.pull-left[
+Under **Begin Routine**
+
+```{r  eval=FALSE}
+
+
+* if not practice_resp.keys:
+*    msg = "Failed to respond"
+elif practice_resp.corr:
+    msg = "Correct!"
+else:
+    msg = "Oops! That was wrong."
+
+```
+
+]
+
+.pull-right[
+
+<br>
+
+If participants did note press any of the response keys, the msg object will now contain .red[“Failed to respond”]
+
+]
+
+---
+
+.pull-left[
+Under **Begin Routine**
+
+```{r  eval=FALSE}
+
+
+if not practice_resp.keys:
+    msg = "Failed to respond"
+*  elif practice_resp.corr:
+*    msg = "Correct!"
+  else:
+    msg = "Oops! That was wrong."
+
+```
+
+]
+
+
+.pull-right[
+
+<br>
+
+If participants pressed the correct response key, the **msg** object will now contain .red[“Correct!”]
+
+]
+---
+
+.pull-left[
+Under **Begin Routine**
+
+```{r  eval=FALSE}
+
+
+if not practice_resp.keys:
+    msg = "Failed to respond"
+  elif practice_resp.corr:
+    msg = "Correct!"
+*  else:
+*    msg = "Oops! That was wrong."
+
+```
+
+]
+
+
+.pull-right[
+
+<br>
+
+If participants pressed the wrong response key, the msg object will now contain .red[“Oops! That was wrong”]
+
+]
+---
+layout: false
+
 ## Troubleshooting
+
+.pull-left[
+- The Runner is your best friend here! Errors will be logged here, and you can usually identify the problem from the last couple of lines that caused the experiment to crash
+
+- For example, this experiment crashed because my Stroop color stimulus was not defined. This means that one of the components may not have been set up properly
+
+- If you’re not sure what the error means, you can always copy paste the error into Google ending with “psychopy”
+
+- Results would often point you to https://discourse.psychopy.org, where you can find resources to assist you in debugging
+
+]
+
+.pull-right[
+
+```{r  out.width = "90%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/psychopyrunner.png")
+```
+
+]
+
+---
+
+## Useful tips
+
+- Its handy to know how to skip portions of your experiment. If you have a 15-minute experiment, you don’t want to sit through the whole experiment just to troubleshoot one specific block
+
+- To do this, insert an **empty loop** between the sections that you want to skip and set nReps to 0
+
+```{r  out.width = "60%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/nrep.png")
+```
+
+---
+
+## General Advice
+
+- If you’ve updated your PsychoPy, but your experiments were coded in a previous version, you may want to force PsychoPy to use an older version 
+
+```{r  out.width = "35%", fig.align="center", dpi =96, echo=FALSE}
+include_graphics("image/version.png")
+```
+
+
+- Be consistent with your naming! Keep it simple and logical so that future you won’t be clueless. This is especially crucial if you are collaborating with others, having consistent and logical names for your codes / components / routines / stimuli would make it so much easier!
+
+
+---
+
+## Common Errors
+
+- Stimulus not Appearing
+    - Have you check if your stimulus is too big? (i.e. Letter Height, Image Height)
+    - Have you checked if your stimulus is positioned off screen?
+    
+- Stimulus not Changing after Every Loop
+    - Have you checked that your stimuli has been correctly set to “Set every repeat”? 
+    
+- Wrong Stimulus Set 
+    - Have you remembered to put a “$” before your variables?
+    - Did you specify the correct excel file in your Loop?
+    - Remember: stimulus.xlsx is different than Stimulus.xlsx
+    
+- AttributeError: ‘unicode object has no attribute ‘XXXX’
+    - Have you checked that you are calling ($) the correct variable name?
 
 ---
 class: inverse, center, middle
@@ -1424,17 +1877,16 @@ include_graphics("image/units-dropdown.png")
 ```
 
 ---
-- **Height**: It is specified relative to the height of the window (note the window, not the screen). For a standard widescreen (16:10 aspect ratio) the bottom left of the screen is (-0.8,-0.5) and top-right is (+0.8,+0.5).
-- **Norm**: In normalised (‘norm’) units the window ranges in both x and y from -1 to +1. That is, the top right of the window has coordinates (1,1), the bottom left is (-1,-1). 
-- **pix**: The sizes are specific to the monitor (because all monitors differ in pixel size). .
 
 - **Height**
 
-    - Everything is specified relative to the height of the window (note the window, not the screen)
+    - Everything is specified relative to the height of the window (note the window, not the screen). For a standard widescreen (16:10 aspect ratio) the bottom left of the screen is (-0.8,-0.5) and top-right is (+0.8,+0.5).
 
 - **Norm**
 
-    - Everything is specified relative to the X, Y dimensions of the window (note the window, not the screen)
+    - Everything is specified relative to the X, Y dimensions of the window (note the window, not the screen). In normalised (‘norm’) units the window ranges in both x and y from -1 to +1. That is, the top right of the window has coordinates (1,1), the bottom left is (-1,-1). 
+
+---
 
 - **Cm**
 
@@ -1446,7 +1898,7 @@ include_graphics("image/units-dropdown.png")
 
 - **Pix**
 
-    - Specify the size and location of your stimulus in pixels, Dependent on the pixel size of monitor
+    - Specify the size and location of your stimulus in pixels, Dependent on the pixel size of monitor (note that all monitors differ in pixel size)
 
 ---
 ### Friendly Advice
@@ -1512,17 +1964,19 @@ class: inverse, center, middle
 
 # Navon Task
 
-Description for Navon
+---
+
+# Navon Task
+
+We do not have time for Navon Task but we have programmed a sample task for your reference. 
+
+For those adventurous ones, you can refer to the manual for Navon Task. 
 
 ---
 
-class: inverse, center, middle
+## Final final thing to do
 
-<a href="http://github.com/sohmeiling"><i class="fa fa-github fa-fw"></i>&nbsp; sohmeiling</a><br>
-
----
-
-<ion-icon name="logo-github"></ion-icon>
+Insert the logo here later. 
 
 ---
 class: center, middle
