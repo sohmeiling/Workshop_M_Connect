@@ -1,6 +1,6 @@
 ---
-title: "Introduction to PsychoPy & Pavlovia"
-author: "Soh Mei Ling | Jonathan Choo | Chong Kai Hao"
+title: "Workshop <br>⚔<br/>Introduction to PsychoPy & Pavlovia"
+author: "<br><br>Soh Mei Ling | Jonathan Choo | Chong Kai Hao"
 institute: "University of Nottingham, Malaysia"
 date: "2021/08/19 (updated: `r Sys.Date()`)"
 output:
@@ -14,7 +14,6 @@ output:
       highlightLanguage: ["r", "css","python", "yaml"]
       ratio: 16:9
       countIncrementalSlides: false
-    seal: false
 
 ---
 
@@ -46,20 +45,6 @@ knitr::opts_chunk$set(
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
 ```
-
-.title-slide[
-
-# .center[Workshop <br>⚔<br/>Introduction to <br>PsychoPy & Pavlovia]
-
-## .center[<br> Kai Hao | Mei Ling | Jonathan Choo ]
-### .center[University of Nottingham, Malaysia]
-### .center[19 August 2021]
-
-.right[Photo by <a href="https://unsplash.com/@tofanteo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tofan Teodor</a> on <a href="https://unsplash.com/s/photos/purple-penang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]
-  
-]
-
----
 
 ## Housekeeping Rules
 
@@ -145,14 +130,11 @@ layout: true
 
 ---
 layout:false
-background-image: url(image/gettingStart1.png)
-background-position: 50% 50%
-background-size: cover
+
 class: inverse, center, middle
 
+# Introduction to PsychoPy
 
-.footnote[.black[Photo by [Scott Webb](https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)]
-  ]
 ---
 ## Builder View
 
@@ -212,7 +194,7 @@ include_graphics("image/toolbar-icons-2.png")
 ---
 
 
-- The last five icons are new web icons. You will need these buttons to launch, sync, and run your projects in the Github. 
+- The last five icons are new web icons. You will need these buttons to launch, sync, and run your projects in the Gitlab. 
 
 ```{r  out.width = "20%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/toolbar-icons-3.png")
@@ -229,16 +211,11 @@ include_graphics("image/loginPavlovia.png")
 .center[.gray.bold[Logging in on Pavlovia via the PsychoPy 3 Builder]]
 
 ---
-layout:false
-background-image: url(image/anyQ.png)
-background-position: 50% 50%
-background-size: cover
+layout: false
+
 class: inverse, center, middle
 
-
-.footnote[.black[Photo by [Sarah Dorweiler
-](https://unsplash.com/@sarahdorweiler) on [Unsplash](https://unsplash.com/)]
-  ]
+# Any Question?
 
 ---
 ## Add New Routine
@@ -252,16 +229,11 @@ include_graphics("gif/add-new-routine.gif")
 ```
 
 ---
-layout:false
-background-image: url(image/next.png)
-background-position: 50% 50%
-background-size: cover
+layout: false
+
 class: inverse, center, middle
 
-
-.footnote[
-Photo by <a href="https://unsplash.com/@agatacreate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Agata Create</a> on <a href="https://unsplash.com/@jazminantoinette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-]
+# Moving on ...
 
 ---
 layout: true
@@ -592,7 +564,7 @@ include_graphics("image/keyboard-component1.png")
 
 💻 **Basic** 
 
-Almost identital the same as the Text and Image properties.
+Almost identical as the Text and Image properties.
 
 1️⃣ __Force end of Routine__: If this box is checked then the_ Routine_ will end as soon as one of the allowed keys is pressed.
 
@@ -637,19 +609,6 @@ include_graphics("image/keyboard-component2.png")
 
 ]
 
----
-layout:false
-background-image: url(image/next2.png)
-background-position: 50% 50%
-background-size: cover
-class: inverse, center, bottom
-
-
-.footnote[
-Photo by <a href="https://unsplash.com/@sarahdorweiler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sarah Dorweiler</a> on <a href="https://unsplash.com/@sarahdorweiler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-]
-
 
 ---
 layout: false
@@ -657,22 +616,19 @@ layout: false
 ## Add New Loop in the Flow
 
 - We use ***Flow*** to combine a few ***Routines*** into a single experiment.
-- Loops control the repetition of Routines and the choice of stimulus parameters for each. 
+- Loops control the .bg-main3[repetition] of Routines and the choice of bg-main3[stimulus parameters] for each. 
 
 ```{r  out.width = "60%", fig.align="center", fig.cap= "GIF for adding new loop", dpi =96, echo=FALSE}
 include_graphics("gif/add-new-loop.gif") 
 ```
 
 ---
-background-image: url(image/gettingStart2.png)
-background-position: 50% 50%
-background-size: cover
+layout: false
+
 class: inverse, center, middle
 
+# Let's start<br><br>(Designing Stroop Task)
 
-.footnote[.black[Photo by <a href="https://unsplash.com/@jazminantoinette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jazmin Quaynor</a> on <a href="https://unsplash.com/collections/2183251/minimalisty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  ]]
-  
 ---
 layout: true
 
@@ -712,15 +668,11 @@ Select the .pink[stroop-test.psyexp]  ➡️  .pink[right-click]  ➡️ .pink[o
 .gray[Note. A readme file will pop up when you open the file. Please briefly glance through the study information before you exit the readme file.]]
 
 ---
-background-image: url(image/pause1.png)
-background-position: 50% 50%
-background-size: cover
-class: inverse, center, middle
 layout: false
 
+class: inverse, center, middle
 
-.footnote[.grey[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  ]]
+# Any problems?
 
 ---
 layout: true
@@ -1189,17 +1141,11 @@ include_graphics("gif/good-job.gif")
 We will take a 10-minute break now. For those interested of customizing the study, please try out the practice tasks in the next two slides. 
 
 ---
-background-image: url(image/pause2.png)
-background-position: 50% 50%
-background-size: cover
-class: inverse, center, middle
 layout: false
 
+class: inverse, center, middle
 
-
-.footnote[.grey[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/s/photos/clean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-  ]]
+# Break Time ...
 
 ---
 layout: false
@@ -1285,18 +1231,15 @@ include_graphics("image/trial-routine.png")
 
 
 ---
-background-image: url(image/stop.png)
-background-position: 50% 50%
-background-size: cover
-class: inverse, center, middle
 layout: false
 
+class: inverse, center, middle
 
-.footnote[.black[Photo by <a href="https://unsplash.com/@agatacreate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Agata Create</a> on <a href="https://unsplash.com/@sarahdorweiler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-]]
-
+# 🍀 Try it out yourself 🍀
 
 ---
+
+<br>
 
 - Did you receive an error message?  
 
@@ -1373,22 +1316,11 @@ knitr::kable(head(naming), format = 'html')
 ---
 layout: false
 
----
 ### Answer
 
 ```{r  out.width = "100%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("image/namingError.png")
 ```
-
----
-
-### Answer
-
-<video width="1280" height="960">
-<source src="image/trial-routine.mp4" type="video/mp4">
-</video>
-
-
 
 ---
 layout: true
@@ -1413,7 +1345,7 @@ include_graphics("gif/push-to-pavlovia.gif")
 - Next, let's move to Pavlovia to check if your experiment has been uploaded successfully. 🤞
 
 
-```{r  out.width = "50%", fig.cap= "GIF for launching online", fig.align="center", dpi =96, echo=FALSE}
+```{r  out.width = "50%", fig.align="center", dpi =96, echo=FALSE}
 include_graphics("gif/pavlovia.gif")
 ```
 
@@ -1966,11 +1898,13 @@ class: inverse, center, middle
 
 ---
 
-# Navon Task
+# .deep-purple[Navon Task]
 
-We do not have time for Navon Task but we have programmed a sample task for your reference. 
+🖥️ We have programmed a practice task for you in the folder "Navon additional practice". 
 
-For those adventurous ones, you can refer to the manual for Navon Task. 
+🖥️ For those adventurous ones, you can refer to the.pink[ "Navon task instruction.ppt"] manual in the .pink["Navon additional practice"] folder.
+
+
 
 ---
 

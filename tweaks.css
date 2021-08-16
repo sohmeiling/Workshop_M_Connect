@@ -1,7 +1,6 @@
 .title-slide {
-  background-image: url(image/front.jpg);
-  background-size: cover;
   width: 100%;
+  background-color: #551A8B;
 }
 
 .bg-gray {
@@ -11,18 +10,21 @@
 .title-slide h1 { padding-top: 5%; font-size: 4em;color:black}
 .title-slide h1 {
   color: black;
+  text-align: center;
   padding-left: 4%!important;
   padding-right: 4%!important;
 }
 .title-slide h2 {
   color: #FFC107;
+  text-align: center;
   line-height: 1em;
   padding-left: 4%!important;
   padding-right: 4%!important;
 }
 
 .title-slide h3{
-  color: #9E9E9E;
+  color: #E6D1F2;
+  text-align: center;
   line-height: 1em;
   padding-left: 4%!important;
   padding-right: 4%!important;
