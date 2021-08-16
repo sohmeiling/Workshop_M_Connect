@@ -50,6 +50,8 @@ Today, we will cover:
 
 You can view the slides [here](https://sohmeiling.github.io/Workshop_M_Connect/). If you would like a copy of the slides, you have to download the whole repository to your local computer.
 
+You can find [all material here including slides  here <i class="fab fa-github"></i> ](https://github.com/sohmeiling/Workshop_M_Connect) or [download without slides here <i class="fa fa-download"></i> ](https://github.com/sohmeiling/Practical_Stroop/archive/refs/heads/main.zip)
+
 ## Contributors:
 - Soh Mei Ling (E: hpxms1@nottingham.edu.my; Twitter: @sohmeiling; Github: @sohmeiling)
 - Chong Kai Hao (khpy6ckh@nottingham.edu.my)
