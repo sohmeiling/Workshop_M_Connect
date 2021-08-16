@@ -13,7 +13,7 @@ Here, you can find all the materials used in the Connect'M's workshop (Introduct
 |Info        |Details    |
 |:----------------|:---------|
 |Date| 19th August 2021|
-|Time | 11:00 am - 12:30 pm|
+|Time | 11:15 am - 12:45 pm|
 
 In this workshop, we are going to give a broad introduction to using PsychoPy. This is useful for anyone who is unfamiliar with PsychoPy and hasn’t used the PsychoPy before (beginner). However, it is also useful for immediate PsychoPy users who are interested to learn useful tips and tricks as well as those who want a refresher lesson. Due to the pandemic, this workshop will be delivered through the Zoom platform and interested participants can register for the workshop through the conference sign-up list.
 
