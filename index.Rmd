@@ -50,7 +50,7 @@ xaringanExtra::use_broadcast()
 
 - All of you will be muted during the Zoom session. If you need to ask a question, please feel free to use the chat box or raise your hand. 
 
-- We have set up a [Slack Workspace](https://mconnect2021.slack.com/) for any technical difficulties during the session. Please ask your question by posting a new message in the .pink[\#Troubleshooting channel]. 
+- We have set up a [Slack Workspace](https://join.slack.com/t/mconnect2021/shared_invite/zt-uc73uvir-S03xdQsLdTUNwLXqUBTJiw) for any technical difficulties during the session. Please ask your question by posting a new message in the .pink[\#Troubleshooting channel]. 
 
 ### Asking questions
 
