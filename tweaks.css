@@ -3,12 +3,6 @@
   background-color: #5B4784;
 }
 
-.bg-gray {
-  background-color: #D3D3D3;
- }
-
-a:link { color: red; }
-
 .title-slide h1 { padding-top: 5%; font-size: 4em;color:black}
 .title-slide h1 {
   color: black;
@@ -32,32 +26,18 @@ a:link { color: red; }
   padding-right: 4%!important;
 }
 
-.content > ul, ol, li, p { font-size: 25px; }
-
+.content > ul, ol, li, p {
+  font-size: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
 .content > h1, h2, h3, p {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.content > ul, ol {
-  padding-left: 60px;
-  padding-right: 60px;
-}
+.bg-gray {background-color: #D3D3D3;}
+.inverse h1{color: white;}
 
-
-.inverse h1{
-  color: white;
-}
-
-h2 {
-  color: #673AB7;
-}
-
-div.my-footer {
-content: "";
-    position: absolute;
-    bottom: 15px;
-    right:   8px;
-    height: 40px;
-    width: 120px;
-}
+h2 {color: #673AB7;}
+a:link { color: red; }
