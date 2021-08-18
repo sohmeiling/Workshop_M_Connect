@@ -2,7 +2,7 @@
 title: "Workshop <br>⚔<br/>Introduction to PsychoPy & Pavlovia"
 author: "<br><br>Soh Mei Ling | Jonathan Choo | Chong Kai Hao"
 institute: "University of Nottingham, Malaysia"
-date: "2021/08/19 (updated: `r Sys.Date()`)"
+date: "2021/08/19"
 output:
   xaringan::moon_reader:
     css: [ "default", "tweaks.css", "ninjutsu", "kunoichi"]
@@ -44,6 +44,26 @@ knitr::opts_chunk$set(
 ```{r xaringan-tile-view, echo=FALSE, include=FALSE}
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
+```
+
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "A gentle introduction to PsychoPy & Pavlovia",
+    generator = "xaringan and remark.js"
+  ) %>% 
+  meta_name("github-repo" = "sohmeiling/Workshop_M_Connect") %>% 
+  meta_social(
+    title = "Workshop: An Introduction to PsychoPy & Pavlovia",
+    url = "https://sohmeiling.github.io/Workshop_M_Connect/",
+    image = "https://sohmeiling.github.io/Workshop_M_Connect/cover.png",
+    image_alt = "The first slide of the Workshop: An Introduction to PsychoPy & Pavlovia presentation",
+    og_type = "website",
+    og_author = "Soh Mei Ling",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@sohmeiling"
+  )
 ```
 
 ## Housekeeping Rules
@@ -1868,7 +1888,7 @@ class: inverse, center, middle
 class: inverse, center, middle
 
 
-## Thank you!<br><br><br>Questions? 
+## Questions? 
 
 --
 
