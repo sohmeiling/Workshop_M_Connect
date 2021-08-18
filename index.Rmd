@@ -1,5 +1,6 @@
 ---
 title: "Workshop <br>⚔<br/>Introduction to PsychoPy & Pavlovia"
+subtitle: "3rd International Connect Malaysia Conference 2021"
 author: "<br><br>Soh Mei Ling | Jonathan Choo | Chong Kai Hao"
 institute: "University of Nottingham, Malaysia"
 date: "2021/08/19"
