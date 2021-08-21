@@ -1,0 +1,41 @@
+2.0310 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+22.1238 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+24.2251 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000013B5CBA8978>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000013B5CD5B390>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+24.2253 	EXP 	window1: mouseVisible = True
+24.2253 	EXP 	window1: recordFrameIntervals = False
+24.3339 	EXP 	window1: recordFrameIntervals = True
+24.3671 	WARNING 	t of last frame was 17.19ms (=1/58)
+24.4606 	WARNING 	t of last frame was 19.22ms (=1/52)
+24.5250 	WARNING 	t of last frame was 16.39ms (=1/61)
+24.5524 	WARNING 	t of last frame was 9.92ms (=1/100)
+24.5758 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+25.4582 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+26.1765 	EXP 	Created welcome_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='welcome_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+26.1780 	EXP 	Created practice_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+26.2037 	EXP 	Created end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='end_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+26.2459 	EXP 	welcome_text: autoDraw = True
+28.8780 	EXP 	Imported wordPractice_stim.xlsx as conditions, 3 conditions, 4 params
+28.8784 	EXP 	Created sequence: random, trialTypes=3, nReps=1, seed=None
+28.8786 	EXP 	New trial (rep=0, index=0): {'type': 'Word', 'practiceWord': 'blue', 'practiceColor': 'black', 'corrResponse': 'right'}
+28.8917 	DATA 	Keypress: space
+28.9011 	EXP 	welcome_text: autoDraw = False
+28.9011 	EXP 	practice_text: text = 'blue'
+28.9011 	EXP 	practice_text: autoDraw = True
+30.3587 	EXP 	New trial (rep=0, index=1): {'type': 'Word', 'practiceWord': 'green', 'practiceColor': 'black', 'corrResponse': 'up'}
+30.3675 	DATA 	Keypress: right
+30.3742 	EXP 	practice_text: autoDraw = False
+30.3742 	EXP 	practice_text: text = 'green'
+30.3742 	EXP 	practice_text: autoDraw = True
+30.9071 	EXP 	New trial (rep=0, index=2): {'type': 'Word', 'practiceWord': 'red', 'practiceColor': 'black', 'corrResponse': 'left'}
+30.9135 	DATA 	Keypress: right
+30.9251 	EXP 	practice_text: autoDraw = False
+30.9251 	EXP 	practice_text: text = 'red'
+30.9251 	EXP 	practice_text: autoDraw = True
+31.3145 	DATA 	Keypress: right
+31.3417 	EXP 	practice_text: autoDraw = False
+31.3417 	EXP 	end_text: autoDraw = True
+32.3412 	EXP 	end_text: autoDraw = False
+32.4032 	EXP 	window1: mouseVisible = True
